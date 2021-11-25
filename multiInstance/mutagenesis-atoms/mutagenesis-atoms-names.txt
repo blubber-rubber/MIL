@@ -1,0 +1,30 @@
+Mutagenesis-Atoms dataset
+
+1: Description.
+
+The problem consists of predicting the mutagenicity of the molecules, that is, determining whether a molecule is mutagenic or non-mutagenic. The dataset for mutagenesis consists of 188 molecules, of which 125 are mutagenic (active) and 63 are non-mutagenic (inactive). From a MIL perspective different transformations are considered, concretely, mutagenesis-atoms represents as a bag all atoms.
+
+2: Type.			Multi instance	
+3: Origin.			Real world
+4: Instances.		1618
+5: Features.		11
+6: Classes.			2	
+7: Missing values.	No
+
+8: Header.
+
+@relation mutagenesis-atoms
+@attribute Atoms-bag-id {1646, 1571, 297, 939, 783, 1340, 96, 639, 1762, 377, 1438, 1681, 402, 682, 6, 1619, 168, 15, 971, 1474, 1712, 494, 521, 252, 122, 1326, 43, 836, 638, 1710, 98, 1452, 1119, 414, 1718, 1299, 580, 477, 1572, 1532, 136, 298, 1247, 1688, 1095, 646, 183, 1736, 415, 817, 301, 534, 1451, 812, 1053, 1061, 166, 81, 16, 1272, 1289, 1478, 814, 333, 918, 1626, 1258, 956, 1197, 1516, 1212, 1391, 949, 733, 466, 1050, 1471, 314, 896, 897, 578, 1425, 1620, 898, 793, 459, 1133, 1040, 1374, 1359, 883, 1509, 998, 572, 795, 1426, 1457, 384, 1227, 760, 738, 327, 152, 644, 1200, 218, 1327, 111, 1004, 486, 144, 1543, 1512, 453, 1428, 435, 210, 1431, 431, 1140, 1551, 1750, 919, 176, 734, 1281, 640, 1463, 1404, 14, 694, 649, 472, 396, 489, 1460, 955, 584, 1435, 1758, 1335, 350, 842, 1101, 1141, 557, 397, 501, 1733, 367, 1076, 765, 1455, 1802, 1668, 1219, 1332, 60, 134, 1564, 872, 983, 958, 1780, 518, 313, 909, 1599, 380, 1068, 72, 1584, 399, 1454, 1300, 672, 336, 1561, 895, 409, 1483, 947, 954, 1366, 280, 1337, 942, 1439}
+@attribute Charge real [-0.781, 1.002]
+@attribute Quantatype real [1.0, 232.0]
+@attribute Type=br real [0.0, 1.0]
+@attribute Type=c real [0.0, 1.0]
+@attribute Type=cl real [0.0, 1.0]
+@attribute Type=f real [0.0, 1.0]
+@attribute Type=h real [0.0, 1.0]
+@attribute Type=i real [0.0, 1.0]
+@attribute Type=n real [0.0, 1.0]
+@attribute Type=o real [0.0, 1.0]
+@attribute Class {0, 1}
+@inputs Atoms-bag-id, Charge, Quantatype, Type=br, Type=c, Type=cl, Type=f, Type=h, Type=i, Type=n, Type=o
+@outputs Class

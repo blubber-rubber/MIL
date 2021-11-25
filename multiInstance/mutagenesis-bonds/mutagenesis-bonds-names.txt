@@ -1,0 +1,36 @@
+Mutagenesis-Bonds dataset
+
+1: Description.
+
+The problem consists of predicting the mutagenicity of the molecules, that is, determining whether a molecule is mutagenic or non-mutagenic. The dataset for mutagenesis consists of 188 molecules, of which 125 are mutagenic (active) and 63 are non-mutagenic (inactive). From a MIL perspective different transformations are considered, concretely, mutagenesis-bonds representas all atom-bond tuples of a compound molecules as a bag.
+
+2: Type.			Multi instance	
+3: Origin.			Real world
+4: Instances.		3995
+5: Features.		17
+6: Classes.			2	
+7: Missing values.	No
+
+8: Header.
+
+@relation mutagenesis-bonds
+@attribute Bonds-bag-id {3933, 3688, 583, 2127, 1764, 3209, 105, 1463, 4168, 681, 3328, 4008, 841, 1714, 11, 3760, 395, 73, 2464, 3466, 4097, 1156, 1176, 516, 205, 3085, 77, 1951, 1451, 4066, 142, 3389, 2664, 909, 4134, 3080, 1292, 1111, 3749, 3580, 251, 586, 2942, 4060, 2657, 1644, 452, 4145, 941, 1884, 600, 1200, 3365, 1855, 2592, 2622, 316, 104, 74, 3052, 3071, 3478, 1863, 647, 2122, 3919, 2992, 2452, 2789, 3558, 2889, 3293, 2349, 1724, 1065, 2550, 3459, 631, 2041, 2085, 1273, 3307, 3899, 2095, 1834, 950, 2755, 2524, 3256, 3225, 2010, 3498, 2483, 1237, 1838, 3322, 3449, 826, 2933, 1759, 1752, 640, 285, 1580, 2874, 502, 3167, 187, 2497, 1131, 273, 3587, 3238, 1063, 2809, 1019, 334, 2879, 927, 2235, 3260, 3743, 1894, 311, 1613, 2522, 1425, 3120, 2751, 3, 1515, 1428, 1190, 724, 1205, 3008, 1924, 1372, 2880, 3766, 2711, 587, 1743, 2134, 2329, 1312, 828, 1210, 3655, 693, 2117, 1615, 2996, 3990, 3599, 2412, 2642, 4, 308, 3559, 1745, 2028, 2005, 3777, 1270, 561, 1849, 3592, 707, 2043, 171, 3570, 886, 2914, 2573, 1659, 652, 3653, 2030, 902, 3495, 2320, 2376, 3230, 538, 3201, 2219, 3344}
+@attribute Bondtype real [1.0, 7.0]
+@attribute Charge1 real [-0.533, 1.002]
+@attribute Charge2 real [-0.781, 1.002]
+@attribute Elementtype1=br real [0.0, 1.0]
+@attribute Elementtype1=c real [0.0, 1.0]
+@attribute Elementtype1=h real [0.0, 1.0]
+@attribute Elementtype1=n real [0.0, 1.0]
+@attribute Elementtype2=c real [0.0, 1.0]
+@attribute Elementtype2=cl real [0.0, 1.0]
+@attribute Elementtype2=f real [0.0, 1.0]
+@attribute Elementtype2=h real [0.0, 1.0]
+@attribute Elementtype2=i real [0.0, 1.0]
+@attribute Elementtype2=n real [0.0, 1.0]
+@attribute Elementtype2=o real [0.0, 1.0]
+@attribute Quanta1 real [1.0, 232.0]
+@attribute Quanta2 real [3.0, 232.0]
+@attribute Class {0, 1}
+@inputs Bonds-bag-id, Bondtype, Charge1, Charge2, Elementtype1=br, Elementtype1=c, Elementtype1=h, Elementtype1=n, Elementtype2=c, Elementtype2=cl, Elementtype2=f, Elementtype2=h, Elementtype2=i, Elementtype2=n, Elementtype2=o, Quanta1, Quanta2
+@outputs Class
