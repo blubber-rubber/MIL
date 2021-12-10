@@ -59,6 +59,7 @@
 | westEast | H | euclidean | exp | average | 0.7 | 0.727 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.667 | 0.25 | 0.333 | 0.75 |
 | westEast | AvgH | euclidean | exp | average | 0.7 | 0.727 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.667 | 0.25 | 0.333 | 0.75 |
 | westEast | MinH | euclidean | exp | average | 0.7 | 0.727 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.667 | 0.25 | 0.333 | 0.75 |
+| westEast | fair_surj | euclidean | strict | None | 0.7 | 0.727 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.667 | 0.25 | 0.333 | 0.75 |
 | westEast | MinH | euclidean | inverse_additive | inverse_additive | 0.7 | 0.7 | 7 | 7 | 3 | 3 | 0.7 | 0.3 | 0.3 | 0.7 | 0.7 | 0.3 | 0.3 | 0.7 |
 | westEast | AvgH | euclidean | exp | exp | 0.7 | 0.7 | 7 | 7 | 3 | 3 | 0.7 | 0.3 | 0.3 | 0.7 | 0.7 | 0.3 | 0.3 | 0.7 |
 | westEast | MinH | euclidean | additive | strict | 0.65 | 0.667 | 7 | 6 | 4 | 3 | 0.7 | 0.3 | 0.4 | 0.6 | 0.636 | 0.333 | 0.364 | 0.667 |

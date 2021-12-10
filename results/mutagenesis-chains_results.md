@@ -4,6 +4,7 @@
 | mutagenesis-chains | SumMin | euclidean | additive | strict | 0.821 | 0.734 | 47 | 109 | 21 | 13 | 0.783 | 0.217 | 0.162 | 0.838 | 0.691 | 0.107 | 0.309 | 0.893 |
 | mutagenesis-chains | SumMin | euclidean | strict | exp | 0.837 | 0.726 | 41 | 118 | 12 | 19 | 0.683 | 0.317 | 0.092 | 0.908 | 0.774 | 0.139 | 0.226 | 0.861 |
 | mutagenesis-chains | SumMin | euclidean | additive | exp | 0.811 | 0.723 | 47 | 107 | 23 | 13 | 0.783 | 0.217 | 0.177 | 0.823 | 0.671 | 0.108 | 0.329 | 0.892 |
+| mutagenesis-chains | fair_surj | euclidean | strict | None | 0.826 | 0.723 | 43 | 114 | 16 | 17 | 0.717 | 0.283 | 0.123 | 0.877 | 0.729 | 0.13 | 0.271 | 0.87 |
 | mutagenesis-chains | SumMin | euclidean | average | strict | 0.805 | 0.718 | 47 | 106 | 24 | 13 | 0.783 | 0.217 | 0.185 | 0.815 | 0.662 | 0.109 | 0.338 | 0.891 |
 | mutagenesis-chains | SumMin | euclidean | inverse_additive | strict | 0.821 | 0.707 | 41 | 115 | 15 | 19 | 0.683 | 0.317 | 0.115 | 0.885 | 0.732 | 0.142 | 0.268 | 0.858 |
 | mutagenesis-chains | link | euclidean | inverse_additive | None | 0.821 | 0.707 | 41 | 115 | 15 | 19 | 0.683 | 0.317 | 0.115 | 0.885 | 0.732 | 0.142 | 0.268 | 0.858 |
