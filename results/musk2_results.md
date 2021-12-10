@@ -24,7 +24,10 @@
 | musk2 | SumMin | euclidean | strict | inverse_additive | 0.72 | 0.76 | 45 | 27 | 13 | 15 | 0.75 | 0.25 | 0.33 | 0.68 | 0.78 | 0.36 | 0.22 | 0.64 |
 | musk2 | H | euclidean | strict | additive | 0.75 | 0.75 | 38 | 37 | 3 | 22 | 0.63 | 0.37 | 0.07 | 0.93 | 0.93 | 0.37 | 0.07 | 0.63 |
 | musk2 | AvgH | euclidean | strict | additive | 0.74 | 0.75 | 38 | 36 | 4 | 22 | 0.63 | 0.37 | 0.1 | 0.9 | 0.9 | 0.38 | 0.1 | 0.62 |
+| musk2 | MinH | euclidean | inverse_additive | strict | 0.75 | 0.75 | 38 | 37 | 3 | 22 | 0.63 | 0.37 | 0.07 | 0.93 | 0.93 | 0.37 | 0.07 | 0.63 |
 | musk2 | SumMin | euclidean | strict | additive | 0.69 | 0.74 | 43 | 26 | 14 | 17 | 0.72 | 0.28 | 0.35 | 0.65 | 0.75 | 0.4 | 0.25 | 0.6 |
+| musk2 | link | euclidean | inverse_additive | None | 0.73 | 0.74 | 38 | 35 | 5 | 22 | 0.63 | 0.37 | 0.12 | 0.88 | 0.88 | 0.39 | 0.12 | 0.61 |
+| musk2 | SumMin | euclidean | inverse_additive | strict | 0.71 | 0.73 | 39 | 32 | 8 | 21 | 0.65 | 0.35 | 0.2 | 0.8 | 0.83 | 0.4 | 0.17 | 0.6 |
 | musk2 | H | euclidean | inverse_additive | strict | 0.72 | 0.7 | 33 | 39 | 1 | 27 | 0.55 | 0.45 | 0.03 | 0.97 | 0.97 | 0.41 | 0.03 | 0.59 |
 | musk2 | SumMin | euclidean | additive | strict | 0.65 | 0.63 | 30 | 35 | 5 | 30 | 0.5 | 0.5 | 0.12 | 0.88 | 0.86 | 0.46 | 0.14 | 0.54 |
 | musk2 | link | euclidean | additive | None | 0.65 | 0.61 | 27 | 38 | 2 | 33 | 0.45 | 0.55 | 0.05 | 0.95 | 0.93 | 0.46 | 0.07 | 0.54 |
