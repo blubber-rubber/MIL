@@ -1,6 +1,5 @@
 import numpy as np
-from Utils import Owa, Owa_weights
-
+from Utils import Owa, Owa_weights, Distances
 
 def BFMIC(X, y, classes, bag_relation, weight):
     best_class = None
@@ -19,7 +18,7 @@ if __name__ == '__main__':
     import os
     from KEEL_DataReader import *
     from CitationKNN import *
-    from Distances import *
+    from Utils.Distances import *
     import time
 
     for root in os.listdir('multiInstance'):

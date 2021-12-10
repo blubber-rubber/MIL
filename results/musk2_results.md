@@ -1,0 +1,32 @@
+| dataset | bag distance | int_dist | ext_owa | int_owa | TP | TN | FP | FN | Sensitivity | False Negative Rate | False Positive Rate | Specificity | Precission | False omission rate | FDR | Negative predictive value | Accuracy | F1 |
+|---------|--------------|----------|---------|---------|----|----|----|----|-------------|---------------------|---------------------|-------------|------------|---------------------|-----|---------------------------|----------|----|
+| musk2 | H | euclidean | strict | strict | 45 | 38 | 2 | 15 | 0.75 | 0.25 | 0.05 | 0.95 | 0.96 | 0.28 | 0.04 | 0.72 | 0.83 | 0.84 |
+| musk2 | AvgH | euclidean | strict | strict | 46 | 37 | 3 | 14 | 0.77 | 0.23 | 0.07 | 0.93 | 0.94 | 0.27 | 0.06 | 0.73 | 0.83 | 0.84 |
+| musk2 | MinH | euclidean | strict | strict | 45 | 32 | 8 | 15 | 0.75 | 0.25 | 0.2 | 0.8 | 0.85 | 0.32 | 0.15 | 0.68 | 0.77 | 0.8 |
+| musk2 | SumMin | euclidean | strict | strict | 46 | 33 | 7 | 14 | 0.77 | 0.23 | 0.17 | 0.82 | 0.87 | 0.3 | 0.13 | 0.7 | 0.79 | 0.81 |
+| musk2 | link | euclidean | strict | None | 44 | 34 | 6 | 16 | 0.73 | 0.27 | 0.15 | 0.85 | 0.88 | 0.32 | 0.12 | 0.68 | 0.78 | 0.8 |
+| musk2 | surj | euclidean | strict | None | 43 | 34 | 6 | 17 | 0.72 | 0.28 | 0.15 | 0.85 | 0.88 | 0.33 | 0.12 | 0.67 | 0.77 | 0.79 |
+| musk2 | H | euclidean | strict | strict | 45 | 38 | 2 | 15 | 0.75 | 0.25 | 0.05 | 0.95 | 0.96 | 0.28 | 0.04 | 0.72 | 0.83 | 0.84 |
+| musk2 | H | euclidean | strict | exp | 45 | 37 | 3 | 15 | 0.75 | 0.25 | 0.07 | 0.93 | 0.94 | 0.29 | 0.06 | 0.71 | 0.82 | 0.83 |
+| musk2 | H | euclidean | strict | inverse_additive | 46 | 36 | 4 | 14 | 0.77 | 0.23 | 0.1 | 0.9 | 0.92 | 0.28 | 0.08 | 0.72 | 0.82 | 0.84 |
+| musk2 | H | euclidean | strict | additive | 38 | 37 | 3 | 22 | 0.63 | 0.37 | 0.07 | 0.93 | 0.93 | 0.37 | 0.07 | 0.63 | 0.75 | 0.75 |
+| musk2 | AvgH | euclidean | strict | strict | 46 | 37 | 3 | 14 | 0.77 | 0.23 | 0.07 | 0.93 | 0.94 | 0.27 | 0.06 | 0.73 | 0.83 | 0.84 |
+| musk2 | AvgH | euclidean | strict | exp | 49 | 38 | 2 | 11 | 0.82 | 0.18 | 0.05 | 0.95 | 0.96 | 0.22 | 0.04 | 0.78 | 0.87 | 0.88 |
+| musk2 | AvgH | euclidean | strict | inverse_additive | 46 | 35 | 5 | 14 | 0.77 | 0.23 | 0.12 | 0.88 | 0.9 | 0.29 | 0.1 | 0.71 | 0.81 | 0.83 |
+| musk2 | AvgH | euclidean | strict | additive | 38 | 36 | 4 | 22 | 0.63 | 0.37 | 0.1 | 0.9 | 0.9 | 0.38 | 0.1 | 0.62 | 0.74 | 0.75 |
+| musk2 | MinH | euclidean | strict | strict | 45 | 32 | 8 | 15 | 0.75 | 0.25 | 0.2 | 0.8 | 0.85 | 0.32 | 0.15 | 0.68 | 0.77 | 0.8 |
+| musk2 | MinH | euclidean | strict | exp | 45 | 34 | 6 | 15 | 0.75 | 0.25 | 0.15 | 0.85 | 0.88 | 0.31 | 0.12 | 0.69 | 0.79 | 0.81 |
+| musk2 | MinH | euclidean | strict | inverse_additive | 43 | 32 | 8 | 17 | 0.72 | 0.28 | 0.2 | 0.8 | 0.84 | 0.35 | 0.16 | 0.65 | 0.75 | 0.77 |
+| musk2 | MinH | euclidean | strict | additive | 43 | 32 | 8 | 17 | 0.72 | 0.28 | 0.2 | 0.8 | 0.84 | 0.35 | 0.16 | 0.65 | 0.75 | 0.77 |
+| musk2 | SumMin | euclidean | strict | strict | 46 | 33 | 7 | 14 | 0.77 | 0.23 | 0.17 | 0.82 | 0.87 | 0.3 | 0.13 | 0.7 | 0.79 | 0.81 |
+| musk2 | SumMin | euclidean | strict | exp | 42 | 31 | 9 | 18 | 0.7 | 0.3 | 0.23 | 0.78 | 0.82 | 0.37 | 0.18 | 0.63 | 0.73 | 0.76 |
+| musk2 | SumMin | euclidean | strict | inverse_additive | 45 | 27 | 13 | 15 | 0.75 | 0.25 | 0.33 | 0.68 | 0.78 | 0.36 | 0.22 | 0.64 | 0.72 | 0.76 |
+| musk2 | SumMin | euclidean | strict | additive | 43 | 26 | 14 | 17 | 0.72 | 0.28 | 0.35 | 0.65 | 0.75 | 0.4 | 0.25 | 0.6 | 0.69 | 0.74 |
+| musk2 | link | euclidean | strict | None | 44 | 34 | 6 | 16 | 0.73 | 0.27 | 0.15 | 0.85 | 0.88 | 0.32 | 0.12 | 0.68 | 0.78 | 0.8 |
+| musk2 | surj | euclidean | strict | None | 43 | 34 | 6 | 17 | 0.72 | 0.28 | 0.15 | 0.85 | 0.88 | 0.33 | 0.12 | 0.67 | 0.77 | 0.79 |
+| musk2 | H | euclidean | additive | strict | 20 | 40 | 0 | 40 | 0.33 | 0.67 | 0.0 | 1.0 | 1.0 | 0.5 | 0.0 | 0.5 | 0.6 | 0.5 |
+| musk2 | AvgH | euclidean | additive | strict | 23 | 40 | 0 | 37 | 0.38 | 0.62 | 0.0 | 1.0 | 1.0 | 0.48 | 0.0 | 0.52 | 0.63 | 0.55 |
+| musk2 | MinH | euclidean | additive | strict | 26 | 40 | 0 | 34 | 0.43 | 0.57 | 0.0 | 1.0 | 1.0 | 0.46 | 0.0 | 0.54 | 0.66 | 0.6 |
+| musk2 | SumMin | euclidean | additive | strict | 30 | 35 | 5 | 30 | 0.5 | 0.5 | 0.12 | 0.88 | 0.86 | 0.46 | 0.14 | 0.54 | 0.65 | 0.63 |
+| musk2 | link | euclidean | additive | None | 27 | 38 | 2 | 33 | 0.45 | 0.55 | 0.05 | 0.95 | 0.93 | 0.46 | 0.07 | 0.54 | 0.65 | 0.61 |
+| musk2 | surj | euclidean | additive | None | 27 | 37 | 3 | 33 | 0.45 | 0.55 | 0.07 | 0.93 | 0.9 | 0.47 | 0.1 | 0.53 | 0.64 | 0.6 |

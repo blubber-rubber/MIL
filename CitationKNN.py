@@ -1,5 +1,4 @@
-import math
-from Distances import *
+from Utils.Distances import *
 
 
 def citationKNN(X, test, k=5, dist=hausdorff_distance, internal_dist=distance.euclidean):
