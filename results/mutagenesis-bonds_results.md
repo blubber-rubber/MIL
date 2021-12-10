@@ -20,6 +20,7 @@
 | mutagenesis-bonds | H | euclidean | exp | exp | 0.78 | 0.67 | 42 | 107 | 23 | 18 | 0.7 | 0.3 | 0.18 | 0.82 | 0.65 | 0.14 | 0.35 | 0.86 |
 | mutagenesis-bonds | AvgH | euclidean | additive | strict | 0.77 | 0.66 | 41 | 106 | 24 | 19 | 0.68 | 0.32 | 0.18 | 0.82 | 0.63 | 0.15 | 0.37 | 0.85 |
 | mutagenesis-bonds | AvgH | euclidean | inverse_additive | strict | 0.78 | 0.66 | 41 | 107 | 23 | 19 | 0.68 | 0.32 | 0.18 | 0.82 | 0.64 | 0.15 | 0.36 | 0.85 |
+| mutagenesis-bonds | SumMin | euclidean | average | exp | 0.74 | 0.66 | 48 | 92 | 38 | 12 | 0.8 | 0.2 | 0.29 | 0.71 | 0.56 | 0.12 | 0.44 | 0.88 |
 | mutagenesis-bonds | link | euclidean | strict | None | 0.78 | 0.65 | 38 | 111 | 19 | 22 | 0.63 | 0.37 | 0.15 | 0.85 | 0.67 | 0.17 | 0.33 | 0.83 |
 | mutagenesis-bonds | AvgH | euclidean | exp | strict | 0.77 | 0.64 | 38 | 109 | 21 | 22 | 0.63 | 0.37 | 0.16 | 0.84 | 0.64 | 0.17 | 0.36 | 0.83 |
 | mutagenesis-bonds | H | euclidean | strict | inverse_additive | 0.79 | 0.64 | 34 | 117 | 13 | 26 | 0.57 | 0.43 | 0.1 | 0.9 | 0.72 | 0.18 | 0.28 | 0.82 |
@@ -33,6 +34,7 @@
 | mutagenesis-bonds | H | euclidean | inverse_additive | strict | 0.71 | 0.6 | 42 | 93 | 37 | 18 | 0.7 | 0.3 | 0.28 | 0.72 | 0.53 | 0.16 | 0.47 | 0.84 |
 | mutagenesis-bonds | surj | euclidean | exp | None | 0.77 | 0.6 | 33 | 113 | 17 | 27 | 0.55 | 0.45 | 0.13 | 0.87 | 0.66 | 0.19 | 0.34 | 0.81 |
 | mutagenesis-bonds | H | euclidean | inverse_additive | exp | 0.73 | 0.6 | 39 | 99 | 31 | 21 | 0.65 | 0.35 | 0.24 | 0.76 | 0.56 | 0.17 | 0.44 | 0.82 |
+| mutagenesis-bonds | H | euclidean | average | exp | 0.7 | 0.6 | 43 | 90 | 40 | 17 | 0.72 | 0.28 | 0.31 | 0.69 | 0.52 | 0.16 | 0.48 | 0.84 |
 | mutagenesis-bonds | H | euclidean | exp | additive | 0.82 | 0.59 | 25 | 130 | 0 | 35 | 0.42 | 0.58 | 0.0 | 1.0 | 1.0 | 0.21 | 0.0 | 0.79 |
 | mutagenesis-bonds | AvgH | euclidean | strict | exp | 0.78 | 0.59 | 30 | 119 | 11 | 30 | 0.5 | 0.5 | 0.08 | 0.92 | 0.73 | 0.2 | 0.27 | 0.8 |
 | mutagenesis-bonds | AvgH | euclidean | exp | exp | 0.78 | 0.59 | 30 | 119 | 11 | 30 | 0.5 | 0.5 | 0.08 | 0.92 | 0.73 | 0.2 | 0.27 | 0.8 |
@@ -50,6 +52,7 @@
 | mutagenesis-bonds | H | euclidean | additive | inverse_additive | 0.73 | 0.53 | 29 | 110 | 20 | 31 | 0.48 | 0.52 | 0.15 | 0.85 | 0.59 | 0.22 | 0.41 | 0.78 |
 | mutagenesis-bonds | AvgH | euclidean | inverse_additive | exp | 0.76 | 0.53 | 25 | 120 | 10 | 35 | 0.42 | 0.58 | 0.08 | 0.92 | 0.71 | 0.23 | 0.29 | 0.77 |
 | mutagenesis-bonds | surj | euclidean | additive | None | 0.66 | 0.52 | 34 | 92 | 38 | 26 | 0.57 | 0.43 | 0.29 | 0.71 | 0.47 | 0.22 | 0.53 | 0.78 |
+| mutagenesis-bonds | AvgH | euclidean | average | exp | 0.73 | 0.51 | 27 | 111 | 19 | 33 | 0.45 | 0.55 | 0.15 | 0.85 | 0.59 | 0.23 | 0.41 | 0.77 |
 | mutagenesis-bonds | MinH | euclidean | additive | strict | 0.67 | 0.5 | 31 | 97 | 33 | 29 | 0.52 | 0.48 | 0.25 | 0.75 | 0.48 | 0.23 | 0.52 | 0.77 |
 | mutagenesis-bonds | SumMin | euclidean | inverse_additive | additive | 0.36 | 0.49 | 58 | 10 | 120 | 2 | 0.97 | 0.03 | 0.92 | 0.08 | 0.33 | 0.17 | 0.67 | 0.83 |
 | mutagenesis-bonds | AvgH | euclidean | average | inverse_additive | 0.74 | 0.49 | 24 | 116 | 14 | 36 | 0.4 | 0.6 | 0.11 | 0.89 | 0.63 | 0.24 | 0.37 | 0.76 |
@@ -65,6 +68,7 @@
 | mutagenesis-bonds | MinH | euclidean | additive | exp | 0.65 | 0.45 | 27 | 97 | 33 | 33 | 0.45 | 0.55 | 0.25 | 0.75 | 0.45 | 0.25 | 0.55 | 0.75 |
 | mutagenesis-bonds | H | euclidean | inverse_additive | additive | 0.77 | 0.44 | 17 | 129 | 1 | 43 | 0.28 | 0.72 | 0.01 | 0.99 | 0.94 | 0.25 | 0.06 | 0.75 |
 | mutagenesis-bonds | AvgH | euclidean | additive | exp | 0.75 | 0.43 | 18 | 124 | 6 | 42 | 0.3 | 0.7 | 0.05 | 0.95 | 0.75 | 0.25 | 0.25 | 0.75 |
+| mutagenesis-bonds | SumMin | euclidean | strict | average | 0.44 | 0.43 | 40 | 44 | 86 | 20 | 0.67 | 0.33 | 0.66 | 0.34 | 0.32 | 0.31 | 0.68 | 0.69 |
 | mutagenesis-bonds | MinH | euclidean | strict | strict | 0.73 | 0.41 | 18 | 121 | 9 | 42 | 0.3 | 0.7 | 0.07 | 0.93 | 0.67 | 0.26 | 0.33 | 0.74 |
 | mutagenesis-bonds | AvgH | euclidean | strict | inverse_additive | 0.71 | 0.3 | 12 | 122 | 8 | 48 | 0.2 | 0.8 | 0.06 | 0.94 | 0.6 | 0.28 | 0.4 | 0.72 |
 | mutagenesis-bonds | AvgH | euclidean | strict | additive | 0.73 | 0.28 | 10 | 128 | 2 | 50 | 0.17 | 0.83 | 0.02 | 0.98 | 0.83 | 0.28 | 0.17 | 0.72 |
@@ -72,12 +76,16 @@
 | mutagenesis-bonds | H | euclidean | additive | additive | 0.72 | 0.25 | 9 | 128 | 2 | 51 | 0.15 | 0.85 | 0.02 | 0.98 | 0.82 | 0.28 | 0.18 | 0.72 |
 | mutagenesis-bonds | MinH | euclidean | strict | additive | 0.65 | 0.23 | 10 | 113 | 17 | 50 | 0.17 | 0.83 | 0.13 | 0.87 | 0.37 | 0.31 | 0.63 | 0.69 |
 | mutagenesis-bonds | AvgH | euclidean | exp | inverse_additive | 0.71 | 0.23 | 8 | 127 | 3 | 52 | 0.13 | 0.87 | 0.02 | 0.98 | 0.73 | 0.29 | 0.27 | 0.71 |
+| mutagenesis-bonds | MinH | euclidean | average | exp | 0.72 | 0.23 | 8 | 128 | 2 | 52 | 0.13 | 0.87 | 0.02 | 0.98 | 0.8 | 0.29 | 0.2 | 0.71 |
 | mutagenesis-bonds | MinH | euclidean | exp | additive | 0.69 | 0.15 | 5 | 127 | 3 | 55 | 0.08 | 0.92 | 0.02 | 0.98 | 0.62 | 0.3 | 0.38 | 0.7 |
 | mutagenesis-bonds | MinH | euclidean | average | additive | 0.71 | 0.15 | 5 | 130 | 0 | 55 | 0.08 | 0.92 | 0.0 | 1.0 | 1.0 | 0.3 | 0.0 | 0.7 |
 | mutagenesis-bonds | AvgH | euclidean | exp | additive | 0.71 | 0.12 | 4 | 130 | 0 | 56 | 0.07 | 0.93 | 0.0 | 1.0 | 1.0 | 0.3 | 0.0 | 0.7 |
 | mutagenesis-bonds | AvgH | euclidean | inverse_additive | additive | 0.69 | 0.06 | 2 | 130 | 0 | 58 | 0.03 | 0.97 | 0.0 | 1.0 | 1.0 | 0.31 | 0.0 | 0.69 |
 | mutagenesis-bonds | MinH | euclidean | inverse_additive | additive | 0.69 | 0.06 | 2 | 130 | 0 | 58 | 0.03 | 0.97 | 0.0 | 1.0 | 1.0 | 0.31 | 0.0 | 0.69 |
 | mutagenesis-bonds | AvgH | euclidean | inverse_additive | inverse_additive | 0.69 | 0.06 | 2 | 130 | 0 | 58 | 0.03 | 0.97 | 0.0 | 1.0 | 1.0 | 0.31 | 0.0 | 0.69 |
+| mutagenesis-bonds | H | euclidean | strict | average | 0.69 | 0.06 | 2 | 130 | 0 | 58 | 0.03 | 0.97 | 0.0 | 1.0 | 1.0 | 0.31 | 0.0 | 0.69 |
+| mutagenesis-bonds | AvgH | euclidean | strict | average | 0.69 | 0.06 | 2 | 130 | 0 | 58 | 0.03 | 0.97 | 0.0 | 1.0 | 1.0 | 0.31 | 0.0 | 0.69 |
+| mutagenesis-bonds | MinH | euclidean | strict | average | 0.69 | 0.06 | 2 | 130 | 0 | 58 | 0.03 | 0.97 | 0.0 | 1.0 | 1.0 | 0.31 | 0.0 | 0.69 |
 | mutagenesis-bonds | AvgH | euclidean | additive | additive | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
 | mutagenesis-bonds | MinH | euclidean | additive | additive | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
 | mutagenesis-bonds | MinH | euclidean | strict | inverse_additive | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |

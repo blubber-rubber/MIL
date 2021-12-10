@@ -5,7 +5,11 @@
 | tiger | link | euclidean | exp | None | 0.81 | 0.82 | 84 | 78 | 22 | 16 | 0.84 | 0.16 | 0.22 | 0.78 | 0.79 | 0.17 | 0.21 | 0.83 |
 | tiger | MinH | euclidean | exp | additive | 0.8 | 0.82 | 91 | 69 | 31 | 9 | 0.91 | 0.09 | 0.31 | 0.69 | 0.75 | 0.12 | 0.25 | 0.88 |
 | tiger | MinH | euclidean | strict | inverse_additive | 0.8 | 0.82 | 89 | 71 | 29 | 11 | 0.89 | 0.11 | 0.29 | 0.71 | 0.75 | 0.13 | 0.25 | 0.87 |
+| tiger | H | euclidean | strict | average | 0.8 | 0.82 | 89 | 71 | 29 | 11 | 0.89 | 0.11 | 0.29 | 0.71 | 0.75 | 0.13 | 0.25 | 0.87 |
+| tiger | AvgH | euclidean | strict | average | 0.8 | 0.82 | 89 | 71 | 29 | 11 | 0.89 | 0.11 | 0.29 | 0.71 | 0.75 | 0.13 | 0.25 | 0.87 |
+| tiger | MinH | euclidean | strict | average | 0.8 | 0.82 | 89 | 71 | 29 | 11 | 0.89 | 0.11 | 0.29 | 0.71 | 0.75 | 0.13 | 0.25 | 0.87 |
 | tiger | MinH | euclidean | strict | additive | 0.78 | 0.81 | 91 | 65 | 35 | 9 | 0.91 | 0.09 | 0.35 | 0.65 | 0.72 | 0.12 | 0.28 | 0.88 |
+| tiger | MinH | euclidean | exp | exp | 0.79 | 0.81 | 89 | 68 | 32 | 11 | 0.89 | 0.11 | 0.32 | 0.68 | 0.74 | 0.14 | 0.26 | 0.86 |
 | tiger | SumMin | euclidean | additive | strict | 0.8 | 0.8 | 78 | 82 | 18 | 22 | 0.78 | 0.22 | 0.18 | 0.82 | 0.81 | 0.21 | 0.19 | 0.79 |
 | tiger | MinH | euclidean | inverse_additive | strict | 0.78 | 0.8 | 91 | 64 | 36 | 9 | 0.91 | 0.09 | 0.36 | 0.64 | 0.72 | 0.12 | 0.28 | 0.88 |
 | tiger | MinH | euclidean | exp | strict | 0.79 | 0.8 | 85 | 73 | 27 | 15 | 0.85 | 0.15 | 0.27 | 0.73 | 0.76 | 0.17 | 0.24 | 0.83 |
@@ -23,6 +27,9 @@
 | tiger | H | euclidean | inverse_additive | inverse_additive | 0.76 | 0.79 | 92 | 59 | 41 | 8 | 0.92 | 0.08 | 0.41 | 0.59 | 0.69 | 0.12 | 0.31 | 0.88 |
 | tiger | MinH | euclidean | exp | inverse_additive | 0.77 | 0.79 | 89 | 64 | 36 | 11 | 0.89 | 0.11 | 0.36 | 0.64 | 0.71 | 0.15 | 0.29 | 0.85 |
 | tiger | MinH | euclidean | strict | exp | 0.76 | 0.79 | 90 | 61 | 39 | 10 | 0.9 | 0.1 | 0.39 | 0.61 | 0.7 | 0.14 | 0.3 | 0.86 |
+| tiger | AvgH | euclidean | exp | exp | 0.77 | 0.79 | 90 | 63 | 37 | 10 | 0.9 | 0.1 | 0.37 | 0.63 | 0.71 | 0.14 | 0.29 | 0.86 |
+| tiger | SumMin | euclidean | exp | exp | 0.79 | 0.79 | 80 | 77 | 23 | 20 | 0.8 | 0.2 | 0.23 | 0.77 | 0.78 | 0.21 | 0.22 | 0.79 |
+| tiger | SumMin | euclidean | average | exp | 0.79 | 0.79 | 79 | 79 | 21 | 21 | 0.79 | 0.21 | 0.21 | 0.79 | 0.79 | 0.21 | 0.21 | 0.79 |
 | tiger | AvgH | euclidean | strict | strict | 0.75 | 0.78 | 87 | 63 | 37 | 13 | 0.87 | 0.13 | 0.37 | 0.63 | 0.7 | 0.17 | 0.3 | 0.83 |
 | tiger | MinH | euclidean | additive | strict | 0.74 | 0.78 | 93 | 56 | 44 | 7 | 0.93 | 0.07 | 0.44 | 0.56 | 0.68 | 0.11 | 0.32 | 0.89 |
 | tiger | link | euclidean | additive | None | 0.78 | 0.78 | 79 | 77 | 23 | 21 | 0.79 | 0.21 | 0.23 | 0.77 | 0.77 | 0.21 | 0.23 | 0.79 |
@@ -68,8 +75,11 @@
 | tiger | AvgH | euclidean | additive | inverse_additive | 0.65 | 0.74 | 98 | 32 | 68 | 2 | 0.98 | 0.02 | 0.68 | 0.32 | 0.59 | 0.06 | 0.41 | 0.94 |
 | tiger | AvgH | euclidean | additive | exp | 0.65 | 0.74 | 98 | 32 | 68 | 2 | 0.98 | 0.02 | 0.68 | 0.32 | 0.59 | 0.06 | 0.41 | 0.94 |
 | tiger | H | euclidean | inverse_additive | exp | 0.69 | 0.74 | 86 | 53 | 47 | 14 | 0.86 | 0.14 | 0.47 | 0.53 | 0.65 | 0.21 | 0.35 | 0.79 |
+| tiger | H | euclidean | exp | exp | 0.73 | 0.74 | 77 | 69 | 31 | 23 | 0.77 | 0.23 | 0.31 | 0.69 | 0.71 | 0.25 | 0.29 | 0.75 |
+| tiger | SumMin | euclidean | strict | average | 0.72 | 0.74 | 81 | 63 | 37 | 19 | 0.81 | 0.19 | 0.37 | 0.63 | 0.69 | 0.23 | 0.31 | 0.77 |
 | tiger | H | euclidean | exp | strict | 0.73 | 0.73 | 74 | 72 | 28 | 26 | 0.74 | 0.26 | 0.28 | 0.72 | 0.73 | 0.27 | 0.27 | 0.73 |
 | tiger | H | euclidean | additive | inverse_additive | 0.64 | 0.73 | 98 | 30 | 70 | 2 | 0.98 | 0.02 | 0.7 | 0.3 | 0.58 | 0.06 | 0.42 | 0.94 |
+| tiger | MinH | euclidean | average | exp | 0.64 | 0.73 | 98 | 30 | 70 | 2 | 0.98 | 0.02 | 0.7 | 0.3 | 0.58 | 0.06 | 0.42 | 0.94 |
 | tiger | H | euclidean | inverse_additive | strict | 0.69 | 0.72 | 81 | 57 | 43 | 19 | 0.81 | 0.19 | 0.43 | 0.57 | 0.65 | 0.25 | 0.35 | 0.75 |
 | tiger | H | euclidean | additive | exp | 0.62 | 0.72 | 95 | 30 | 70 | 5 | 0.95 | 0.05 | 0.7 | 0.3 | 0.58 | 0.14 | 0.42 | 0.86 |
 | tiger | H | euclidean | strict | strict | 0.69 | 0.7 | 73 | 65 | 35 | 27 | 0.73 | 0.27 | 0.35 | 0.65 | 0.68 | 0.29 | 0.32 | 0.71 |
@@ -80,5 +90,7 @@
 | tiger | AvgH | euclidean | average | strict | 0.53 | 0.68 | 99 | 7 | 93 | 1 | 0.99 | 0.01 | 0.93 | 0.07 | 0.52 | 0.12 | 0.48 | 0.88 |
 | tiger | H | euclidean | average | additive | 0.53 | 0.68 | 100 | 6 | 94 | 0 | 1.0 | 0.0 | 0.94 | 0.06 | 0.52 | 0.0 | 0.48 | 1.0 |
 | tiger | H | euclidean | average | inverse_additive | 0.53 | 0.68 | 100 | 6 | 94 | 0 | 1.0 | 0.0 | 0.94 | 0.06 | 0.52 | 0.0 | 0.48 | 1.0 |
+| tiger | H | euclidean | average | exp | 0.54 | 0.68 | 100 | 7 | 93 | 0 | 1.0 | 0.0 | 0.93 | 0.07 | 0.52 | 0.0 | 0.48 | 1.0 |
 | tiger | AvgH | euclidean | average | additive | 0.52 | 0.67 | 99 | 5 | 95 | 1 | 0.99 | 0.01 | 0.95 | 0.05 | 0.51 | 0.17 | 0.49 | 0.83 |
 | tiger | AvgH | euclidean | average | inverse_additive | 0.52 | 0.67 | 99 | 4 | 96 | 1 | 0.99 | 0.01 | 0.96 | 0.04 | 0.51 | 0.2 | 0.49 | 0.8 |
+| tiger | AvgH | euclidean | average | exp | 0.52 | 0.67 | 99 | 5 | 95 | 1 | 0.99 | 0.01 | 0.95 | 0.05 | 0.51 | 0.17 | 0.49 | 0.83 |

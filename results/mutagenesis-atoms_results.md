@@ -35,7 +35,10 @@
 | mutagenesis-atoms | AvgH | euclidean | inverse_additive | strict | 0.75 | 0.59 | 34 | 109 | 21 | 26 | 0.57 | 0.43 | 0.16 | 0.84 | 0.62 | 0.19 | 0.38 | 0.81 |
 | mutagenesis-atoms | SumMin | euclidean | exp | exp | 0.76 | 0.59 | 32 | 113 | 17 | 28 | 0.53 | 0.47 | 0.13 | 0.87 | 0.65 | 0.2 | 0.35 | 0.8 |
 | mutagenesis-atoms | H | euclidean | inverse_additive | exp | 0.77 | 0.58 | 31 | 115 | 15 | 29 | 0.52 | 0.48 | 0.12 | 0.88 | 0.67 | 0.2 | 0.33 | 0.8 |
+| mutagenesis-atoms | MinH | euclidean | average | exp | 0.76 | 0.58 | 31 | 114 | 16 | 29 | 0.52 | 0.48 | 0.12 | 0.88 | 0.66 | 0.2 | 0.34 | 0.8 |
 | mutagenesis-atoms | AvgH | euclidean | average | strict | 0.72 | 0.57 | 36 | 100 | 30 | 24 | 0.6 | 0.4 | 0.23 | 0.77 | 0.55 | 0.19 | 0.45 | 0.81 |
+| mutagenesis-atoms | AvgH | euclidean | average | exp | 0.63 | 0.57 | 48 | 71 | 59 | 12 | 0.8 | 0.2 | 0.45 | 0.55 | 0.45 | 0.14 | 0.55 | 0.86 |
+| mutagenesis-atoms | SumMin | euclidean | average | exp | 0.67 | 0.57 | 41 | 86 | 44 | 19 | 0.68 | 0.32 | 0.34 | 0.66 | 0.48 | 0.18 | 0.52 | 0.82 |
 | mutagenesis-atoms | MinH | euclidean | additive | strict | 0.71 | 0.56 | 35 | 99 | 31 | 25 | 0.58 | 0.42 | 0.24 | 0.76 | 0.53 | 0.2 | 0.47 | 0.8 |
 | mutagenesis-atoms | H | euclidean | average | strict | 0.73 | 0.56 | 32 | 107 | 23 | 28 | 0.53 | 0.47 | 0.18 | 0.82 | 0.58 | 0.21 | 0.42 | 0.79 |
 | mutagenesis-atoms | H | euclidean | additive | inverse_additive | 0.71 | 0.56 | 35 | 99 | 31 | 25 | 0.58 | 0.42 | 0.24 | 0.76 | 0.53 | 0.2 | 0.47 | 0.8 |
@@ -48,6 +51,7 @@
 | mutagenesis-atoms | SumMin | euclidean | inverse_additive | exp | 0.73 | 0.54 | 31 | 107 | 23 | 29 | 0.52 | 0.48 | 0.18 | 0.82 | 0.57 | 0.21 | 0.43 | 0.79 |
 | mutagenesis-atoms | AvgH | euclidean | average | additive | 0.68 | 0.53 | 34 | 96 | 34 | 26 | 0.57 | 0.43 | 0.26 | 0.74 | 0.5 | 0.21 | 0.5 | 0.79 |
 | mutagenesis-atoms | SumMin | euclidean | additive | exp | 0.69 | 0.53 | 33 | 98 | 32 | 27 | 0.55 | 0.45 | 0.25 | 0.75 | 0.51 | 0.22 | 0.49 | 0.78 |
+| mutagenesis-atoms | H | euclidean | average | exp | 0.59 | 0.53 | 44 | 69 | 61 | 16 | 0.73 | 0.27 | 0.47 | 0.53 | 0.42 | 0.19 | 0.58 | 0.81 |
 | mutagenesis-atoms | H | euclidean | average | inverse_additive | 0.58 | 0.52 | 43 | 68 | 62 | 17 | 0.72 | 0.28 | 0.48 | 0.52 | 0.41 | 0.2 | 0.59 | 0.8 |
 | mutagenesis-atoms | AvgH | euclidean | exp | exp | 0.71 | 0.52 | 30 | 104 | 26 | 30 | 0.5 | 0.5 | 0.2 | 0.8 | 0.54 | 0.22 | 0.46 | 0.78 |
 | mutagenesis-atoms | H | euclidean | average | additive | 0.54 | 0.51 | 46 | 57 | 73 | 14 | 0.77 | 0.23 | 0.56 | 0.44 | 0.39 | 0.2 | 0.61 | 0.8 |
@@ -86,3 +90,7 @@
 | mutagenesis-atoms | MinH | euclidean | inverse_additive | additive | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
 | mutagenesis-atoms | SumMin | euclidean | inverse_additive | additive | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
 | mutagenesis-atoms | MinH | euclidean | exp | additive | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-atoms | H | euclidean | strict | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-atoms | AvgH | euclidean | strict | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-atoms | MinH | euclidean | strict | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-atoms | SumMin | euclidean | strict | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
