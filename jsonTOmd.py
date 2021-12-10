@@ -2,7 +2,9 @@ import json
 from collections import defaultdict
 
 filename = 'temp.json'
-header = '| dataset | bag distance | int_dist | ext_owa | int_owa | TP | TN | FP | FN | Sensitivity | False Negative Rate | False Positive Rate | Specificity | Precission | False omission rate | FDR | Negative predictive value | Accuracy | F1 |\n|---------|--------------|----------|---------|---------|----|----|----|----|-------------|---------------------|---------------------|-------------|------------|---------------------|-----|---------------------------|----------|----|\n'
+header = [
+    '| dataset | bag distance | int_dist | ext_owa | int_owa | Accuracy | F1 | TP | TN | FP | FN | Sensitivity | False Negative Rate | False Positive Rate | Specificity | Precission | False omission rate | FDR | Negative predictive value |\n',
+    '|---------|--------------|----------|---------|---------|----------|----|----|----|----|----|-------------|---------------------|---------------------|-------------|------------|---------------------|-----|---------------------------|\n']
 
 datasets = ['eastWest', 'elephant', 'fox', 'musk1', 'musk2', 'mutagenesis-atoms', 'mutagenesis-bonds',
             'mutagenesis-chains', 'tiger', 'westEast']
@@ -82,13 +84,16 @@ with open(filename, 'r') as file:
     data = json.load(file)
     for dataset in datasets:
         rows = [result for result in data['results'] if result['data'] == dataset]
-        table = header
+        table = []
         for result in rows:
             tp = result['TP']
             tn = result['TN']
             fp = result['FP']
             fn = result['FN']
-            table += f'| {dataset} | {result["b_dist"]} | {result["int_dist"]} | {result["ext_owa"]} | {result["int_owa"]} | {tp} | {tn} | {fp} | {fn} | {sens(tp, fn)} | {fnr(fn, tp)} | {fpr(fp, tn)} | {spec(tn, fp)} | {prec(tp, fp)} | {fomr(fn, tn)} | {fdr(fp, tp)} | {npv(tn, fn)} | {accuracy(tp, fp, tn, fn)} | {f1(tp, fp, fn)} |\n'
+            table.append(
+                f'| {dataset} | {result["b_dist"]} | {result["int_dist"]} | {result["ext_owa"]} | {result["int_owa"]} | {accuracy(tp, fp, tn, fn)} | {f1(tp, fp, fn)} | {tp} | {tn} | {fp} | {fn} | {sens(tp, fn)} | {fnr(fn, tp)} | {fpr(fp, tn)} | {spec(tn, fp)} | {prec(tp, fp)} | {fomr(fn, tn)} | {fdr(fp, tp)} | {npv(tn, fn)} |\n')
+        table.sort(key=lambda row: float(row.strip('|').split('|')[6].strip(' ')), reverse=True)
         f = open(f'results/{dataset}_results.md', 'w')
-        f.write(table)
+        f.write(''.join(header))
+        f.write(''.join(table))
         f.close()

@@ -1,8 +1,14 @@
-| dataset | bag distance | int_dist | ext_owa | int_owa | TP | TN | FP | FN | Sensitivity | False Negative Rate | False Positive Rate | Specificity | Precission | False omission rate | FDR | Negative predictive value | Accuracy | F1 |
-|---------|--------------|----------|---------|---------|----|----|----|----|-------------|---------------------|---------------------|-------------|------------|---------------------|-----|---------------------------|----------|----|
-| tiger | H | euclidean | strict | strict | 73 | 65 | 35 | 27 | 0.73 | 0.27 | 0.35 | 0.65 | 0.68 | 0.29 | 0.32 | 0.71 | 0.69 | 0.7 |
-| tiger | AvgH | euclidean | strict | strict | 87 | 63 | 37 | 13 | 0.87 | 0.13 | 0.37 | 0.63 | 0.7 | 0.17 | 0.3 | 0.83 | 0.75 | 0.78 |
-| tiger | MinH | euclidean | strict | strict | 81 | 68 | 32 | 19 | 0.81 | 0.19 | 0.32 | 0.68 | 0.72 | 0.22 | 0.28 | 0.78 | 0.74 | 0.76 |
-| tiger | SumMin | euclidean | strict | strict | 82 | 67 | 33 | 18 | 0.82 | 0.18 | 0.33 | 0.67 | 0.71 | 0.21 | 0.29 | 0.79 | 0.74 | 0.76 |
-| tiger | link | euclidean | strict | None | 88 | 76 | 24 | 12 | 0.88 | 0.12 | 0.24 | 0.76 | 0.79 | 0.14 | 0.21 | 0.86 | 0.82 | 0.83 |
-| tiger | surj | euclidean | strict | None | 80 | 67 | 33 | 20 | 0.8 | 0.2 | 0.33 | 0.67 | 0.71 | 0.23 | 0.29 | 0.77 | 0.73 | 0.75 |
+| dataset | bag distance | int_dist | ext_owa | int_owa | Accuracy | F1 | TP | TN | FP | FN | Sensitivity | False Negative Rate | False Positive Rate | Specificity | Precission | False omission rate | FDR | Negative predictive value |
+|---------|--------------|----------|---------|---------|----------|----|----|----|----|----|-------------|---------------------|---------------------|-------------|------------|---------------------|-----|---------------------------|
+| tiger | link | euclidean | strict | None | 0.82 | 0.83 | 88 | 76 | 24 | 12 | 0.88 | 0.12 | 0.24 | 0.76 | 0.79 | 0.14 | 0.21 | 0.86 |
+| tiger | SumMin | euclidean | additive | strict | 0.8 | 0.8 | 78 | 82 | 18 | 22 | 0.78 | 0.22 | 0.18 | 0.82 | 0.81 | 0.21 | 0.19 | 0.79 |
+| tiger | AvgH | euclidean | strict | strict | 0.75 | 0.78 | 87 | 63 | 37 | 13 | 0.87 | 0.13 | 0.37 | 0.63 | 0.7 | 0.17 | 0.3 | 0.83 |
+| tiger | MinH | euclidean | additive | strict | 0.74 | 0.78 | 93 | 56 | 44 | 7 | 0.93 | 0.07 | 0.44 | 0.56 | 0.68 | 0.11 | 0.32 | 0.89 |
+| tiger | link | euclidean | additive | None | 0.78 | 0.78 | 79 | 77 | 23 | 21 | 0.79 | 0.21 | 0.23 | 0.77 | 0.77 | 0.21 | 0.23 | 0.79 |
+| tiger | surj | euclidean | additive | None | 0.77 | 0.78 | 81 | 72 | 28 | 19 | 0.81 | 0.19 | 0.28 | 0.72 | 0.74 | 0.21 | 0.26 | 0.79 |
+| tiger | MinH | euclidean | strict | strict | 0.74 | 0.76 | 81 | 68 | 32 | 19 | 0.81 | 0.19 | 0.32 | 0.68 | 0.72 | 0.22 | 0.28 | 0.78 |
+| tiger | SumMin | euclidean | strict | strict | 0.74 | 0.76 | 82 | 67 | 33 | 18 | 0.82 | 0.18 | 0.33 | 0.67 | 0.71 | 0.21 | 0.29 | 0.79 |
+| tiger | AvgH | euclidean | additive | strict | 0.69 | 0.76 | 98 | 40 | 60 | 2 | 0.98 | 0.02 | 0.6 | 0.4 | 0.62 | 0.05 | 0.38 | 0.95 |
+| tiger | surj | euclidean | strict | None | 0.73 | 0.75 | 80 | 67 | 33 | 20 | 0.8 | 0.2 | 0.33 | 0.67 | 0.71 | 0.23 | 0.29 | 0.77 |
+| tiger | H | euclidean | strict | strict | 0.69 | 0.7 | 73 | 65 | 35 | 27 | 0.73 | 0.27 | 0.35 | 0.65 | 0.68 | 0.29 | 0.32 | 0.71 |
+| tiger | H | euclidean | additive | strict | 0.59 | 0.68 | 87 | 32 | 68 | 13 | 0.87 | 0.13 | 0.68 | 0.32 | 0.56 | 0.29 | 0.44 | 0.71 |
