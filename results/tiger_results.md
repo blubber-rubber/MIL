@@ -1,9 +1,11 @@
 | dataset | bag distance | int_dist | ext_owa | int_owa | Accuracy | F1 | TP | TN | FP | FN | Sensitivity | False Negative Rate | False Positive Rate | Specificity | Precission | False omission rate | FDR | Negative predictive value |
 |---------|--------------|----------|---------|---------|----------|----|----|----|----|----|-------------|---------------------|---------------------|-------------|------------|---------------------|-----|---------------------------|
 | tiger | link | euclidean | strict | None | 0.82 | 0.83 | 88 | 76 | 24 | 12 | 0.88 | 0.12 | 0.24 | 0.76 | 0.79 | 0.14 | 0.21 | 0.86 |
+| tiger | link | euclidean | exp | None | 0.81 | 0.82 | 84 | 78 | 22 | 16 | 0.84 | 0.16 | 0.22 | 0.78 | 0.79 | 0.17 | 0.21 | 0.83 |
 | tiger | SumMin | euclidean | additive | strict | 0.8 | 0.8 | 78 | 82 | 18 | 22 | 0.78 | 0.22 | 0.18 | 0.82 | 0.81 | 0.21 | 0.19 | 0.79 |
 | tiger | MinH | euclidean | inverse_additive | strict | 0.78 | 0.8 | 91 | 64 | 36 | 9 | 0.91 | 0.09 | 0.36 | 0.64 | 0.72 | 0.12 | 0.28 | 0.88 |
 | tiger | MinH | euclidean | exp | strict | 0.79 | 0.8 | 85 | 73 | 27 | 15 | 0.85 | 0.15 | 0.27 | 0.73 | 0.76 | 0.17 | 0.24 | 0.83 |
+| tiger | SumMin | euclidean | exp | strict | 0.8 | 0.8 | 83 | 76 | 24 | 17 | 0.83 | 0.17 | 0.24 | 0.76 | 0.78 | 0.18 | 0.22 | 0.82 |
 | tiger | SumMin | euclidean | inverse_additive | strict | 0.8 | 0.79 | 76 | 83 | 17 | 24 | 0.76 | 0.24 | 0.17 | 0.83 | 0.82 | 0.22 | 0.18 | 0.78 |
 | tiger | link | euclidean | inverse_additive | None | 0.79 | 0.79 | 82 | 75 | 25 | 18 | 0.82 | 0.18 | 0.25 | 0.75 | 0.77 | 0.19 | 0.23 | 0.81 |
 | tiger | AvgH | euclidean | exp | strict | 0.76 | 0.79 | 90 | 62 | 38 | 10 | 0.9 | 0.1 | 0.38 | 0.62 | 0.7 | 0.14 | 0.3 | 0.86 |
