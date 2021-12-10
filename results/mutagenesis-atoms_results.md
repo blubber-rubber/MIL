@@ -27,6 +27,7 @@
 | mutagenesis-atoms | AvgH | manhattan | strict | strict | 0.816 | 0.646 | 32 | 123 | 7 | 28 | 0.533 | 0.467 | 0.054 | 0.946 | 0.821 | 0.185 | 0.179 | 0.815 |
 | mutagenesis-atoms | SumMin | manhattan | strict | strict | 0.816 | 0.646 | 32 | 123 | 7 | 28 | 0.533 | 0.467 | 0.054 | 0.946 | 0.821 | 0.185 | 0.179 | 0.815 |
 | mutagenesis-atoms | link | manhattan | additive | None | 0.758 | 0.646 | 42 | 102 | 28 | 18 | 0.7 | 0.3 | 0.215 | 0.785 | 0.6 | 0.15 | 0.4 | 0.85 |
+| mutagenesis-atoms | fair_surj | euclidean | additive | None | 0.737 | 0.638 | 44 | 96 | 34 | 16 | 0.733 | 0.267 | 0.262 | 0.738 | 0.564 | 0.143 | 0.436 | 0.857 |
 | mutagenesis-atoms | link | euclidean | additive | None | 0.747 | 0.636 | 42 | 100 | 30 | 18 | 0.7 | 0.3 | 0.231 | 0.769 | 0.583 | 0.153 | 0.417 | 0.847 |
 | mutagenesis-atoms | link | euclidean | average | None | 0.747 | 0.636 | 42 | 100 | 30 | 18 | 0.7 | 0.3 | 0.231 | 0.769 | 0.583 | 0.153 | 0.417 | 0.847 |
 | mutagenesis-atoms | H | manhattan | additive | strict | 0.737 | 0.627 | 42 | 98 | 32 | 18 | 0.7 | 0.3 | 0.246 | 0.754 | 0.568 | 0.155 | 0.432 | 0.845 |
