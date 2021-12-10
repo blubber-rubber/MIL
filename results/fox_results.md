@@ -32,6 +32,7 @@
 | fox | H | euclidean | strict | average | 0.57 | 0.59 | 61 | 53 | 47 | 39 | 0.61 | 0.39 | 0.47 | 0.53 | 0.56 | 0.42 | 0.44 | 0.58 |
 | fox | AvgH | euclidean | strict | average | 0.57 | 0.59 | 61 | 53 | 47 | 39 | 0.61 | 0.39 | 0.47 | 0.53 | 0.56 | 0.42 | 0.44 | 0.58 |
 | fox | MinH | euclidean | strict | average | 0.57 | 0.59 | 61 | 53 | 47 | 39 | 0.61 | 0.39 | 0.47 | 0.53 | 0.56 | 0.42 | 0.44 | 0.58 |
+| fox | SumMin | euclidean | inverse_additive | average | 0.58 | 0.59 | 60 | 56 | 44 | 40 | 0.6 | 0.4 | 0.44 | 0.56 | 0.58 | 0.42 | 0.42 | 0.58 |
 | fox | AvgH | euclidean | strict | exp | 0.56 | 0.58 | 61 | 50 | 50 | 39 | 0.61 | 0.39 | 0.5 | 0.5 | 0.55 | 0.44 | 0.45 | 0.56 |
 | fox | MinH | euclidean | strict | additive | 0.56 | 0.58 | 60 | 52 | 48 | 40 | 0.6 | 0.4 | 0.48 | 0.52 | 0.56 | 0.43 | 0.44 | 0.57 |
 | fox | H | euclidean | exp | exp | 0.59 | 0.58 | 56 | 63 | 37 | 44 | 0.56 | 0.44 | 0.37 | 0.63 | 0.6 | 0.41 | 0.4 | 0.59 |
@@ -70,6 +71,9 @@
 | fox | MinH | euclidean | strict | exp | 0.47 | 0.46 | 45 | 48 | 52 | 55 | 0.45 | 0.55 | 0.52 | 0.48 | 0.46 | 0.53 | 0.54 | 0.47 |
 | fox | H | euclidean | inverse_additive | inverse_additive | 0.6 | 0.46 | 34 | 86 | 14 | 66 | 0.34 | 0.66 | 0.14 | 0.86 | 0.71 | 0.43 | 0.29 | 0.57 |
 | fox | H | euclidean | inverse_additive | additive | 0.6 | 0.45 | 32 | 89 | 11 | 68 | 0.32 | 0.68 | 0.11 | 0.89 | 0.74 | 0.43 | 0.26 | 0.57 |
+| fox | H | euclidean | inverse_additive | average | 0.57 | 0.41 | 30 | 85 | 15 | 70 | 0.3 | 0.7 | 0.15 | 0.85 | 0.67 | 0.45 | 0.33 | 0.55 |
+| fox | AvgH | euclidean | inverse_additive | average | 0.57 | 0.41 | 30 | 85 | 15 | 70 | 0.3 | 0.7 | 0.15 | 0.85 | 0.67 | 0.45 | 0.33 | 0.55 |
+| fox | MinH | euclidean | inverse_additive | average | 0.57 | 0.41 | 30 | 85 | 15 | 70 | 0.3 | 0.7 | 0.15 | 0.85 | 0.67 | 0.45 | 0.33 | 0.55 |
 | fox | MinH | euclidean | additive | inverse_additive | 0.59 | 0.37 | 24 | 94 | 6 | 76 | 0.24 | 0.76 | 0.06 | 0.94 | 0.8 | 0.45 | 0.2 | 0.55 |
 | fox | AvgH | euclidean | additive | strict | 0.59 | 0.35 | 22 | 96 | 4 | 78 | 0.22 | 0.78 | 0.04 | 0.96 | 0.85 | 0.45 | 0.15 | 0.55 |
 | fox | AvgH | euclidean | additive | exp | 0.56 | 0.28 | 17 | 96 | 4 | 83 | 0.17 | 0.83 | 0.04 | 0.96 | 0.81 | 0.46 | 0.19 | 0.54 |
@@ -92,6 +96,7 @@
 | fox | fair_surj | euclidean | additive | None | 0.52 | 0.09 | 5 | 99 | 1 | 95 | 0.05 | 0.95 | 0.01 | 0.99 | 0.83 | 0.49 | 0.17 | 0.51 |
 | fox | MinH | euclidean | average | strict | 0.52 | 0.09 | 5 | 99 | 1 | 95 | 0.05 | 0.95 | 0.01 | 0.99 | 0.83 | 0.49 | 0.17 | 0.51 |
 | fox | MinH | euclidean | average | exp | 0.51 | 0.04 | 2 | 99 | 1 | 98 | 0.02 | 0.98 | 0.01 | 0.99 | 0.67 | 0.5 | 0.33 | 0.5 |
+| fox | SumMin | euclidean | additive | average | 0.51 | 0.04 | 2 | 100 | 0 | 98 | 0.02 | 0.98 | 0.0 | 1.0 | 1.0 | 0.49 | 0.0 | 0.51 |
 | fox | H | euclidean | average | strict | 0.51 | 0.02 | 1 | 100 | 0 | 99 | 0.01 | 0.99 | 0.0 | 1.0 | 1.0 | 0.5 | 0.0 | 0.5 |
 | fox | MinH | euclidean | average | inverse_additive | 0.51 | 0.02 | 1 | 100 | 0 | 99 | 0.01 | 0.99 | 0.0 | 1.0 | 1.0 | 0.5 | 0.0 | 0.5 |
 | fox | surj | euclidean | average | None | 0.5 | 0.02 | 1 | 99 | 1 | 99 | 0.01 | 0.99 | 0.01 | 0.99 | 0.5 | 0.5 | 0.5 | 0.5 |

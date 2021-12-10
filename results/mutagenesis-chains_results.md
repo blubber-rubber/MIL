@@ -59,6 +59,8 @@
 | mutagenesis-chains | AvgH | euclidean | average | additive | 0.71 | 0.48 | 25 | 110 | 20 | 35 | 0.42 | 0.58 | 0.15 | 0.85 | 0.56 | 0.24 | 0.44 | 0.76 |
 | mutagenesis-chains | SumMin | euclidean | average | additive | 0.32 | 0.48 | 60 | 0 | 130 | 0 | 1.0 | 0.0 | 1.0 | 0.0 | 0.32 | Nan | 0.68 | Nan |
 | mutagenesis-chains | H | euclidean | average | inverse_additive | 0.63 | 0.48 | 32 | 88 | 42 | 28 | 0.53 | 0.47 | 0.32 | 0.68 | 0.43 | 0.24 | 0.57 | 0.76 |
+| mutagenesis-chains | SumMin | euclidean | additive | average | 0.32 | 0.48 | 60 | 0 | 130 | 0 | 1.0 | 0.0 | 1.0 | 0.0 | 0.32 | Nan | 0.68 | Nan |
+| mutagenesis-chains | SumMin | euclidean | inverse_additive | average | 0.32 | 0.48 | 60 | 0 | 130 | 0 | 1.0 | 0.0 | 1.0 | 0.0 | 0.32 | Nan | 0.68 | Nan |
 | mutagenesis-chains | SumMin | euclidean | exp | additive | 0.37 | 0.47 | 53 | 18 | 112 | 7 | 0.88 | 0.12 | 0.86 | 0.14 | 0.32 | 0.28 | 0.68 | 0.72 |
 | mutagenesis-chains | MinH | euclidean | average | additive | 0.72 | 0.46 | 23 | 113 | 17 | 37 | 0.38 | 0.62 | 0.13 | 0.87 | 0.57 | 0.25 | 0.42 | 0.75 |
 | mutagenesis-chains | SumMin | euclidean | strict | average | 0.36 | 0.46 | 52 | 17 | 113 | 8 | 0.87 | 0.13 | 0.87 | 0.13 | 0.32 | 0.32 | 0.68 | 0.68 |
@@ -94,3 +96,9 @@
 | mutagenesis-chains | H | euclidean | strict | average | 0.67 | 0.0 | 0 | 127 | 3 | 60 | 0.0 | 1.0 | 0.02 | 0.98 | 0.0 | 0.32 | 1.0 | 0.68 |
 | mutagenesis-chains | AvgH | euclidean | strict | average | 0.67 | 0.0 | 0 | 127 | 3 | 60 | 0.0 | 1.0 | 0.02 | 0.98 | 0.0 | 0.32 | 1.0 | 0.68 |
 | mutagenesis-chains | MinH | euclidean | strict | average | 0.67 | 0.0 | 0 | 127 | 3 | 60 | 0.0 | 1.0 | 0.02 | 0.98 | 0.0 | 0.32 | 1.0 | 0.68 |
+| mutagenesis-chains | H | euclidean | additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-chains | AvgH | euclidean | additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-chains | MinH | euclidean | additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-chains | H | euclidean | inverse_additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-chains | AvgH | euclidean | inverse_additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-chains | MinH | euclidean | inverse_additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |

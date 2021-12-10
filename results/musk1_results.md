@@ -65,10 +65,12 @@
 | musk1 | AvgH | euclidean | inverse_additive | inverse_additive | 0.86 | 0.81 | 27 | 50 | 0 | 13 | 0.68 | 0.33 | 0.0 | 1.0 | 1.0 | 0.21 | 0.0 | 0.79 |
 | musk1 | AvgH | euclidean | inverse_additive | additive | 0.86 | 0.81 | 27 | 50 | 0 | 13 | 0.68 | 0.33 | 0.0 | 1.0 | 1.0 | 0.21 | 0.0 | 0.79 |
 | musk1 | H | euclidean | exp | exp | 0.86 | 0.81 | 27 | 50 | 0 | 13 | 0.68 | 0.33 | 0.0 | 1.0 | 1.0 | 0.21 | 0.0 | 0.79 |
+| musk1 | SumMin | euclidean | additive | average | 0.83 | 0.81 | 31 | 44 | 6 | 9 | 0.78 | 0.23 | 0.12 | 0.88 | 0.84 | 0.17 | 0.16 | 0.83 |
 | musk1 | H | euclidean | strict | average | 0.83 | 0.8 | 30 | 45 | 5 | 10 | 0.75 | 0.25 | 0.1 | 0.9 | 0.86 | 0.18 | 0.14 | 0.82 |
 | musk1 | AvgH | euclidean | strict | average | 0.83 | 0.8 | 30 | 45 | 5 | 10 | 0.75 | 0.25 | 0.1 | 0.9 | 0.86 | 0.18 | 0.14 | 0.82 |
 | musk1 | MinH | euclidean | strict | average | 0.83 | 0.8 | 30 | 45 | 5 | 10 | 0.75 | 0.25 | 0.1 | 0.9 | 0.86 | 0.18 | 0.14 | 0.82 |
 | musk1 | H | euclidean | inverse_additive | strict | 0.84 | 0.79 | 26 | 50 | 0 | 14 | 0.65 | 0.35 | 0.0 | 1.0 | 1.0 | 0.22 | 0.0 | 0.78 |
+| musk1 | SumMin | euclidean | inverse_additive | average | 0.82 | 0.79 | 30 | 44 | 6 | 10 | 0.75 | 0.25 | 0.12 | 0.88 | 0.83 | 0.19 | 0.17 | 0.81 |
 | musk1 | MinH | euclidean | additive | strict | 0.83 | 0.77 | 25 | 50 | 0 | 15 | 0.62 | 0.38 | 0.0 | 1.0 | 1.0 | 0.23 | 0.0 | 0.77 |
 | musk1 | SumMin | euclidean | average | inverse_additive | 0.83 | 0.77 | 25 | 50 | 0 | 15 | 0.62 | 0.38 | 0.0 | 1.0 | 1.0 | 0.23 | 0.0 | 0.77 |
 | musk1 | SumMin | euclidean | average | additive | 0.83 | 0.77 | 25 | 50 | 0 | 15 | 0.62 | 0.38 | 0.0 | 1.0 | 1.0 | 0.23 | 0.0 | 0.77 |
@@ -84,6 +86,9 @@
 | musk1 | SumMin | euclidean | average | exp | 0.81 | 0.73 | 23 | 50 | 0 | 17 | 0.57 | 0.42 | 0.0 | 1.0 | 1.0 | 0.25 | 0.0 | 0.75 |
 | musk1 | fair_surj | euclidean | average | None | 0.79 | 0.73 | 26 | 45 | 5 | 14 | 0.65 | 0.35 | 0.1 | 0.9 | 0.84 | 0.24 | 0.16 | 0.76 |
 | musk1 | surj | euclidean | average | None | 0.79 | 0.72 | 24 | 47 | 3 | 16 | 0.6 | 0.4 | 0.06 | 0.94 | 0.89 | 0.25 | 0.11 | 0.75 |
+| musk1 | H | euclidean | inverse_additive | average | 0.77 | 0.67 | 21 | 48 | 2 | 19 | 0.53 | 0.47 | 0.04 | 0.96 | 0.91 | 0.28 | 0.09 | 0.72 |
+| musk1 | AvgH | euclidean | inverse_additive | average | 0.77 | 0.67 | 21 | 48 | 2 | 19 | 0.53 | 0.47 | 0.04 | 0.96 | 0.91 | 0.28 | 0.09 | 0.72 |
+| musk1 | MinH | euclidean | inverse_additive | average | 0.77 | 0.67 | 21 | 48 | 2 | 19 | 0.53 | 0.47 | 0.04 | 0.96 | 0.91 | 0.28 | 0.09 | 0.72 |
 | musk1 | AvgH | euclidean | additive | additive | 0.74 | 0.6 | 17 | 50 | 0 | 23 | 0.42 | 0.57 | 0.0 | 1.0 | 1.0 | 0.32 | 0.0 | 0.68 |
 | musk1 | MinH | euclidean | additive | additive | 0.74 | 0.6 | 17 | 50 | 0 | 23 | 0.42 | 0.57 | 0.0 | 1.0 | 1.0 | 0.32 | 0.0 | 0.68 |
 | musk1 | AvgH | euclidean | additive | strict | 0.73 | 0.57 | 16 | 50 | 0 | 24 | 0.4 | 0.6 | 0.0 | 1.0 | 1.0 | 0.32 | 0.0 | 0.68 |
@@ -91,6 +96,9 @@
 | musk1 | AvgH | euclidean | additive | inverse_additive | 0.73 | 0.57 | 16 | 50 | 0 | 24 | 0.4 | 0.6 | 0.0 | 1.0 | 1.0 | 0.32 | 0.0 | 0.68 |
 | musk1 | MinH | euclidean | additive | inverse_additive | 0.73 | 0.57 | 16 | 50 | 0 | 24 | 0.4 | 0.6 | 0.0 | 1.0 | 1.0 | 0.32 | 0.0 | 0.68 |
 | musk1 | H | euclidean | additive | additive | 0.72 | 0.55 | 15 | 50 | 0 | 25 | 0.38 | 0.62 | 0.0 | 1.0 | 1.0 | 0.33 | 0.0 | 0.67 |
+| musk1 | H | euclidean | additive | average | 0.72 | 0.55 | 15 | 50 | 0 | 25 | 0.38 | 0.62 | 0.0 | 1.0 | 1.0 | 0.33 | 0.0 | 0.67 |
+| musk1 | AvgH | euclidean | additive | average | 0.72 | 0.55 | 15 | 50 | 0 | 25 | 0.38 | 0.62 | 0.0 | 1.0 | 1.0 | 0.33 | 0.0 | 0.67 |
+| musk1 | MinH | euclidean | additive | average | 0.72 | 0.55 | 15 | 50 | 0 | 25 | 0.38 | 0.62 | 0.0 | 1.0 | 1.0 | 0.33 | 0.0 | 0.67 |
 | musk1 | H | euclidean | additive | exp | 0.71 | 0.52 | 14 | 50 | 0 | 26 | 0.35 | 0.65 | 0.0 | 1.0 | 1.0 | 0.34 | 0.0 | 0.66 |
 | musk1 | H | euclidean | additive | inverse_additive | 0.71 | 0.52 | 14 | 50 | 0 | 26 | 0.35 | 0.65 | 0.0 | 1.0 | 1.0 | 0.34 | 0.0 | 0.66 |
 | musk1 | H | euclidean | additive | strict | 0.69 | 0.46 | 12 | 50 | 0 | 28 | 0.3 | 0.7 | 0.0 | 1.0 | 1.0 | 0.36 | 0.0 | 0.64 |

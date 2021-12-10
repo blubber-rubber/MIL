@@ -60,6 +60,8 @@
 | mutagenesis-bonds | SumMin | euclidean | additive | additive | 0.32 | 0.48 | 60 | 1 | 129 | 0 | 1.0 | 0.0 | 0.99 | 0.01 | 0.32 | 0.0 | 0.68 | 1.0 |
 | mutagenesis-bonds | SumMin | euclidean | average | additive | 0.32 | 0.48 | 60 | 0 | 130 | 0 | 1.0 | 0.0 | 1.0 | 0.0 | 0.32 | Nan | 0.68 | Nan |
 | mutagenesis-bonds | SumMin | euclidean | exp | inverse_additive | 0.47 | 0.48 | 46 | 43 | 87 | 14 | 0.77 | 0.23 | 0.67 | 0.33 | 0.35 | 0.25 | 0.65 | 0.75 |
+| mutagenesis-bonds | SumMin | euclidean | additive | average | 0.32 | 0.48 | 60 | 0 | 130 | 0 | 1.0 | 0.0 | 1.0 | 0.0 | 0.32 | Nan | 0.68 | Nan |
+| mutagenesis-bonds | SumMin | euclidean | inverse_additive | average | 0.32 | 0.48 | 60 | 1 | 129 | 0 | 1.0 | 0.0 | 0.99 | 0.01 | 0.32 | 0.0 | 0.68 | 1.0 |
 | mutagenesis-bonds | SumMin | euclidean | strict | additive | 0.43 | 0.47 | 48 | 33 | 97 | 12 | 0.8 | 0.2 | 0.75 | 0.25 | 0.33 | 0.27 | 0.67 | 0.73 |
 | mutagenesis-bonds | H | euclidean | average | additive | 0.69 | 0.47 | 26 | 106 | 24 | 34 | 0.43 | 0.57 | 0.18 | 0.82 | 0.52 | 0.24 | 0.48 | 0.76 |
 | mutagenesis-bonds | AvgH | euclidean | average | additive | 0.73 | 0.46 | 22 | 116 | 14 | 38 | 0.37 | 0.63 | 0.11 | 0.89 | 0.61 | 0.25 | 0.39 | 0.75 |
@@ -94,3 +96,9 @@
 | mutagenesis-bonds | MinH | euclidean | inverse_additive | inverse_additive | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
 | mutagenesis-bonds | MinH | euclidean | exp | inverse_additive | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
 | mutagenesis-bonds | MinH | euclidean | average | inverse_additive | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-bonds | H | euclidean | additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-bonds | AvgH | euclidean | additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-bonds | MinH | euclidean | additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-bonds | H | euclidean | inverse_additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-bonds | AvgH | euclidean | inverse_additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |
+| mutagenesis-bonds | MinH | euclidean | inverse_additive | average | 0.68 | 0.0 | 0 | 130 | 0 | 60 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.32 | Nan | 0.68 |

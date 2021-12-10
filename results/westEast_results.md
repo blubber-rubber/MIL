@@ -46,6 +46,12 @@
 | westEast | MinH | euclidean | average | strict | 0.7 | 0.73 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.67 | 0.25 | 0.33 | 0.75 |
 | westEast | AvgH | euclidean | inverse_additive | additive | 0.7 | 0.73 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.67 | 0.25 | 0.33 | 0.75 |
 | westEast | MinH | euclidean | average | exp | 0.7 | 0.73 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.67 | 0.25 | 0.33 | 0.75 |
+| westEast | H | euclidean | additive | average | 0.7 | 0.73 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.67 | 0.25 | 0.33 | 0.75 |
+| westEast | AvgH | euclidean | additive | average | 0.7 | 0.73 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.67 | 0.25 | 0.33 | 0.75 |
+| westEast | MinH | euclidean | additive | average | 0.7 | 0.73 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.67 | 0.25 | 0.33 | 0.75 |
+| westEast | H | euclidean | inverse_additive | average | 0.7 | 0.73 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.67 | 0.25 | 0.33 | 0.75 |
+| westEast | AvgH | euclidean | inverse_additive | average | 0.7 | 0.73 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.67 | 0.25 | 0.33 | 0.75 |
+| westEast | MinH | euclidean | inverse_additive | average | 0.7 | 0.73 | 8 | 6 | 4 | 2 | 0.8 | 0.2 | 0.4 | 0.6 | 0.67 | 0.25 | 0.33 | 0.75 |
 | westEast | MinH | euclidean | inverse_additive | inverse_additive | 0.7 | 0.7 | 7 | 7 | 3 | 3 | 0.7 | 0.3 | 0.3 | 0.7 | 0.7 | 0.3 | 0.3 | 0.7 |
 | westEast | AvgH | euclidean | exp | exp | 0.7 | 0.7 | 7 | 7 | 3 | 3 | 0.7 | 0.3 | 0.3 | 0.7 | 0.7 | 0.3 | 0.3 | 0.7 |
 | westEast | MinH | euclidean | additive | strict | 0.65 | 0.67 | 7 | 6 | 4 | 3 | 0.7 | 0.3 | 0.4 | 0.6 | 0.64 | 0.33 | 0.36 | 0.67 |
@@ -94,3 +100,5 @@
 | westEast | SumMin | euclidean | average | inverse_additive | 0.5 | 0.0 | 0 | 10 | 0 | 10 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.5 | Nan | 0.5 |
 | westEast | SumMin | euclidean | average | exp | 0.5 | 0.0 | 0 | 10 | 0 | 10 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.5 | Nan | 0.5 |
 | westEast | SumMin | euclidean | strict | average | 0.5 | 0.0 | 0 | 10 | 0 | 10 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.5 | Nan | 0.5 |
+| westEast | SumMin | euclidean | additive | average | 0.5 | 0.0 | 0 | 10 | 0 | 10 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.5 | Nan | 0.5 |
+| westEast | SumMin | euclidean | inverse_additive | average | 0.5 | 0.0 | 0 | 10 | 0 | 10 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.5 | Nan | 0.5 |
