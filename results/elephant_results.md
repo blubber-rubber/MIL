@@ -6,6 +6,7 @@
 | elephant | fair_surj | euclidean | inverse_additive | None | 0.815 | 0.828 | 89 | 74 | 26 | 11 | 0.89 | 0.11 | 0.26 | 0.74 | 0.774 | 0.129 | 0.226 | 0.871 |
 | elephant | link | euclidean | inverse_additive | None | 0.815 | 0.826 | 88 | 75 | 25 | 12 | 0.88 | 0.12 | 0.25 | 0.75 | 0.779 | 0.138 | 0.221 | 0.862 |
 | elephant | link | euclidean | exp | None | 0.825 | 0.826 | 83 | 82 | 18 | 17 | 0.83 | 0.17 | 0.18 | 0.82 | 0.822 | 0.172 | 0.178 | 0.828 |
+| elephant | SumMin | manhattan | additive | strict | 0.795 | 0.826 | 97 | 62 | 38 | 3 | 0.97 | 0.03 | 0.38 | 0.62 | 0.719 | 0.046 | 0.281 | 0.954 |
 | elephant | fair_surj | euclidean | exp | None | 0.825 | 0.824 | 82 | 83 | 17 | 18 | 0.82 | 0.18 | 0.17 | 0.83 | 0.828 | 0.178 | 0.172 | 0.822 |
 | elephant | SumMin | euclidean | strict | strict | 0.8 | 0.823 | 93 | 67 | 33 | 7 | 0.93 | 0.07 | 0.33 | 0.67 | 0.738 | 0.095 | 0.262 | 0.905 |
 | elephant | SumMin | euclidean | strict | strict | 0.8 | 0.823 | 93 | 67 | 33 | 7 | 0.93 | 0.07 | 0.33 | 0.67 | 0.738 | 0.095 | 0.262 | 0.905 |
@@ -14,8 +15,11 @@
 | elephant | fair_surj | euclidean | strict | None | 0.82 | 0.82 | 82 | 82 | 18 | 18 | 0.82 | 0.18 | 0.18 | 0.82 | 0.82 | 0.18 | 0.18 | 0.82 |
 | elephant | H | euclidean | exp | strict | 0.83 | 0.815 | 75 | 91 | 9 | 25 | 0.75 | 0.25 | 0.09 | 0.91 | 0.893 | 0.216 | 0.107 | 0.784 |
 | elephant | H | euclidean | average | inverse_additive | 0.795 | 0.814 | 90 | 69 | 31 | 10 | 0.9 | 0.1 | 0.31 | 0.69 | 0.744 | 0.127 | 0.256 | 0.873 |
+| elephant | SumMin | manhattan | strict | strict | 0.79 | 0.814 | 92 | 66 | 34 | 8 | 0.92 | 0.08 | 0.34 | 0.66 | 0.73 | 0.108 | 0.27 | 0.892 |
+| elephant | link | manhattan | strict | None | 0.815 | 0.812 | 80 | 83 | 17 | 20 | 0.8 | 0.2 | 0.17 | 0.83 | 0.825 | 0.194 | 0.175 | 0.806 |
 | elephant | SumMin | euclidean | exp | strict | 0.78 | 0.81 | 94 | 62 | 38 | 6 | 0.94 | 0.06 | 0.38 | 0.62 | 0.712 | 0.088 | 0.288 | 0.912 |
 | elephant | SumMin | euclidean | strict | exp | 0.765 | 0.8 | 94 | 59 | 41 | 6 | 0.94 | 0.06 | 0.41 | 0.59 | 0.696 | 0.092 | 0.304 | 0.908 |
+| elephant | AvgH | manhattan | strict | strict | 0.815 | 0.8 | 74 | 89 | 11 | 26 | 0.74 | 0.26 | 0.11 | 0.89 | 0.871 | 0.226 | 0.129 | 0.774 |
 | elephant | AvgH | euclidean | strict | strict | 0.815 | 0.798 | 73 | 90 | 10 | 27 | 0.73 | 0.27 | 0.1 | 0.9 | 0.88 | 0.231 | 0.12 | 0.769 |
 | elephant | AvgH | euclidean | strict | strict | 0.815 | 0.798 | 73 | 90 | 10 | 27 | 0.73 | 0.27 | 0.1 | 0.9 | 0.88 | 0.231 | 0.12 | 0.769 |
 | elephant | MinH | euclidean | strict | additive | 0.8 | 0.798 | 79 | 81 | 19 | 21 | 0.79 | 0.21 | 0.19 | 0.81 | 0.806 | 0.206 | 0.194 | 0.794 |
@@ -45,6 +49,7 @@
 | elephant | link | euclidean | additive | None | 0.75 | 0.775 | 86 | 64 | 36 | 14 | 0.86 | 0.14 | 0.36 | 0.64 | 0.705 | 0.179 | 0.295 | 0.821 |
 | elephant | SumMin | euclidean | exp | inverse_additive | 0.72 | 0.772 | 95 | 49 | 51 | 5 | 0.95 | 0.05 | 0.51 | 0.49 | 0.651 | 0.093 | 0.349 | 0.907 |
 | elephant | link | euclidean | average | None | 0.725 | 0.772 | 93 | 52 | 48 | 7 | 0.93 | 0.07 | 0.48 | 0.52 | 0.66 | 0.119 | 0.34 | 0.881 |
+| elephant | link | manhattan | additive | None | 0.76 | 0.771 | 81 | 71 | 29 | 19 | 0.81 | 0.19 | 0.29 | 0.71 | 0.736 | 0.211 | 0.264 | 0.789 |
 | elephant | SumMin | euclidean | strict | additive | 0.72 | 0.769 | 93 | 51 | 49 | 7 | 0.93 | 0.07 | 0.49 | 0.51 | 0.655 | 0.121 | 0.345 | 0.879 |
 | elephant | H | euclidean | exp | exp | 0.79 | 0.767 | 69 | 89 | 11 | 31 | 0.69 | 0.31 | 0.11 | 0.89 | 0.863 | 0.258 | 0.138 | 0.742 |
 | elephant | MinH | euclidean | exp | exp | 0.8 | 0.767 | 66 | 94 | 6 | 34 | 0.66 | 0.34 | 0.06 | 0.94 | 0.917 | 0.266 | 0.083 | 0.734 |
@@ -60,6 +65,7 @@
 | elephant | H | euclidean | additive | strict | 0.775 | 0.757 | 70 | 85 | 15 | 30 | 0.7 | 0.3 | 0.15 | 0.85 | 0.824 | 0.261 | 0.176 | 0.739 |
 | elephant | SumMin | euclidean | exp | additive | 0.695 | 0.757 | 95 | 44 | 56 | 5 | 0.95 | 0.05 | 0.56 | 0.44 | 0.629 | 0.102 | 0.371 | 0.898 |
 | elephant | fair_surj | euclidean | additive | None | 0.725 | 0.756 | 85 | 60 | 40 | 15 | 0.85 | 0.15 | 0.4 | 0.6 | 0.68 | 0.2 | 0.32 | 0.8 |
+| elephant | surj | manhattan | additive | None | 0.765 | 0.756 | 73 | 80 | 20 | 27 | 0.73 | 0.27 | 0.2 | 0.8 | 0.785 | 0.252 | 0.215 | 0.748 |
 | elephant | H | euclidean | average | average | 0.77 | 0.755 | 71 | 83 | 17 | 29 | 0.71 | 0.29 | 0.17 | 0.83 | 0.807 | 0.259 | 0.193 | 0.741 |
 | elephant | AvgH | euclidean | average | average | 0.77 | 0.755 | 71 | 83 | 17 | 29 | 0.71 | 0.29 | 0.17 | 0.83 | 0.807 | 0.259 | 0.193 | 0.741 |
 | elephant | MinH | euclidean | average | average | 0.77 | 0.755 | 71 | 83 | 17 | 29 | 0.71 | 0.29 | 0.17 | 0.83 | 0.807 | 0.259 | 0.193 | 0.741 |
@@ -76,6 +82,7 @@
 | elephant | MinH | euclidean | strict | strict | 0.765 | 0.746 | 69 | 84 | 16 | 31 | 0.69 | 0.31 | 0.16 | 0.84 | 0.812 | 0.27 | 0.188 | 0.73 |
 | elephant | MinH | euclidean | strict | strict | 0.765 | 0.746 | 69 | 84 | 16 | 31 | 0.69 | 0.31 | 0.16 | 0.84 | 0.812 | 0.27 | 0.188 | 0.73 |
 | elephant | MinH | euclidean | strict | exp | 0.765 | 0.746 | 69 | 84 | 16 | 31 | 0.69 | 0.31 | 0.16 | 0.84 | 0.812 | 0.27 | 0.188 | 0.73 |
+| elephant | H | manhattan | strict | strict | 0.765 | 0.746 | 69 | 84 | 16 | 31 | 0.69 | 0.31 | 0.16 | 0.84 | 0.812 | 0.27 | 0.188 | 0.73 |
 | elephant | SumMin | euclidean | additive | inverse_additive | 0.66 | 0.744 | 99 | 33 | 67 | 1 | 0.99 | 0.01 | 0.67 | 0.33 | 0.596 | 0.029 | 0.404 | 0.971 |
 | elephant | SumMin | euclidean | exp | average | 0.67 | 0.744 | 96 | 38 | 62 | 4 | 0.96 | 0.04 | 0.62 | 0.38 | 0.608 | 0.095 | 0.392 | 0.905 |
 | elephant | H | euclidean | additive | exp | 0.785 | 0.743 | 62 | 95 | 5 | 38 | 0.62 | 0.38 | 0.05 | 0.95 | 0.925 | 0.286 | 0.075 | 0.714 |
@@ -96,12 +103,15 @@
 | elephant | AvgH | euclidean | inverse_additive | additive | 0.77 | 0.726 | 61 | 93 | 7 | 39 | 0.61 | 0.39 | 0.07 | 0.93 | 0.897 | 0.295 | 0.103 | 0.705 |
 | elephant | AvgH | euclidean | inverse_additive | exp | 0.77 | 0.72 | 59 | 95 | 5 | 41 | 0.59 | 0.41 | 0.05 | 0.95 | 0.922 | 0.301 | 0.078 | 0.699 |
 | elephant | SumMin | euclidean | inverse_additive | average | 0.615 | 0.72 | 99 | 24 | 76 | 1 | 0.99 | 0.01 | 0.76 | 0.24 | 0.566 | 0.04 | 0.434 | 0.96 |
+| elephant | surj | manhattan | strict | None | 0.73 | 0.719 | 69 | 77 | 23 | 31 | 0.69 | 0.31 | 0.23 | 0.77 | 0.75 | 0.287 | 0.25 | 0.713 |
 | elephant | AvgH | euclidean | inverse_additive | strict | 0.765 | 0.715 | 59 | 94 | 6 | 41 | 0.59 | 0.41 | 0.06 | 0.94 | 0.908 | 0.304 | 0.092 | 0.696 |
+| elephant | MinH | manhattan | strict | strict | 0.74 | 0.714 | 65 | 83 | 17 | 35 | 0.65 | 0.35 | 0.17 | 0.83 | 0.793 | 0.297 | 0.207 | 0.703 |
 | elephant | AvgH | euclidean | inverse_additive | inverse_additive | 0.76 | 0.711 | 59 | 93 | 7 | 41 | 0.59 | 0.41 | 0.07 | 0.93 | 0.894 | 0.306 | 0.106 | 0.694 |
 | elephant | MinH | euclidean | inverse_additive | inverse_additive | 0.77 | 0.709 | 56 | 98 | 2 | 44 | 0.56 | 0.44 | 0.02 | 0.98 | 0.966 | 0.31 | 0.034 | 0.69 |
 | elephant | SumMin | euclidean | average | inverse_additive | 0.59 | 0.709 | 100 | 18 | 82 | 0 | 1.0 | 0.0 | 0.82 | 0.18 | 0.549 | 0.0 | 0.451 | 1.0 |
 | elephant | SumMin | euclidean | additive | average | 0.59 | 0.709 | 100 | 18 | 82 | 0 | 1.0 | 0.0 | 0.82 | 0.18 | 0.549 | 0.0 | 0.451 | 1.0 |
 | elephant | SumMin | euclidean | average | additive | 0.585 | 0.707 | 100 | 17 | 83 | 0 | 1.0 | 0.0 | 0.83 | 0.17 | 0.546 | 0.0 | 0.454 | 1.0 |
+| elephant | H | manhattan | additive | strict | 0.77 | 0.705 | 55 | 99 | 1 | 45 | 0.55 | 0.45 | 0.01 | 0.99 | 0.982 | 0.312 | 0.018 | 0.688 |
 | elephant | H | euclidean | additive | average | 0.765 | 0.704 | 56 | 97 | 3 | 44 | 0.56 | 0.44 | 0.03 | 0.97 | 0.949 | 0.312 | 0.051 | 0.688 |
 | elephant | AvgH | euclidean | additive | average | 0.765 | 0.704 | 56 | 97 | 3 | 44 | 0.56 | 0.44 | 0.03 | 0.97 | 0.949 | 0.312 | 0.051 | 0.688 |
 | elephant | MinH | euclidean | additive | average | 0.765 | 0.704 | 56 | 97 | 3 | 44 | 0.56 | 0.44 | 0.03 | 0.97 | 0.949 | 0.312 | 0.051 | 0.688 |
@@ -117,8 +127,10 @@
 | elephant | AvgH | euclidean | average | strict | 0.73 | 0.635 | 47 | 99 | 1 | 53 | 0.47 | 0.53 | 0.01 | 0.99 | 0.979 | 0.349 | 0.021 | 0.651 |
 | elephant | AvgH | euclidean | additive | exp | 0.705 | 0.587 | 42 | 99 | 1 | 58 | 0.42 | 0.58 | 0.01 | 0.99 | 0.977 | 0.369 | 0.023 | 0.631 |
 | elephant | MinH | euclidean | additive | inverse_additive | 0.695 | 0.567 | 40 | 99 | 1 | 60 | 0.4 | 0.6 | 0.01 | 0.99 | 0.976 | 0.377 | 0.024 | 0.623 |
+| elephant | AvgH | manhattan | additive | strict | 0.685 | 0.54 | 37 | 100 | 0 | 63 | 0.37 | 0.63 | 0.0 | 1.0 | 1.0 | 0.387 | 0.0 | 0.613 |
 | elephant | MinH | euclidean | additive | strict | 0.675 | 0.526 | 36 | 99 | 1 | 64 | 0.36 | 0.64 | 0.01 | 0.99 | 0.973 | 0.393 | 0.027 | 0.607 |
 | elephant | MinH | euclidean | additive | exp | 0.675 | 0.526 | 36 | 99 | 1 | 64 | 0.36 | 0.64 | 0.01 | 0.99 | 0.973 | 0.393 | 0.027 | 0.607 |
+| elephant | MinH | manhattan | additive | strict | 0.67 | 0.515 | 35 | 99 | 1 | 65 | 0.35 | 0.65 | 0.01 | 0.99 | 0.972 | 0.396 | 0.028 | 0.604 |
 | elephant | MinH | euclidean | average | inverse_additive | 0.665 | 0.504 | 34 | 99 | 1 | 66 | 0.34 | 0.66 | 0.01 | 0.99 | 0.971 | 0.4 | 0.029 | 0.6 |
 | elephant | MinH | euclidean | average | strict | 0.6 | 0.344 | 21 | 99 | 1 | 79 | 0.21 | 0.79 | 0.01 | 0.99 | 0.955 | 0.444 | 0.045 | 0.556 |
 | elephant | MinH | euclidean | average | exp | 0.575 | 0.274 | 16 | 99 | 1 | 84 | 0.16 | 0.84 | 0.01 | 0.99 | 0.941 | 0.459 | 0.059 | 0.541 |

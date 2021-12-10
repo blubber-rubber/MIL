@@ -15,18 +15,23 @@
 | mutagenesis-chains | SumMin | euclidean | exp | strict | 0.816 | 0.69 | 39 | 116 | 14 | 21 | 0.65 | 0.35 | 0.108 | 0.892 | 0.736 | 0.153 | 0.264 | 0.847 |
 | mutagenesis-chains | link | euclidean | exp | None | 0.8 | 0.667 | 38 | 114 | 16 | 22 | 0.633 | 0.367 | 0.123 | 0.877 | 0.704 | 0.162 | 0.296 | 0.838 |
 | mutagenesis-chains | SumMin | euclidean | average | exp | 0.737 | 0.662 | 49 | 91 | 39 | 11 | 0.817 | 0.183 | 0.3 | 0.7 | 0.557 | 0.108 | 0.443 | 0.892 |
+| mutagenesis-chains | link | manhattan | strict | None | 0.8 | 0.661 | 37 | 115 | 15 | 23 | 0.617 | 0.383 | 0.115 | 0.885 | 0.712 | 0.167 | 0.288 | 0.833 |
 | mutagenesis-chains | AvgH | euclidean | average | strict | 0.789 | 0.655 | 38 | 112 | 18 | 22 | 0.633 | 0.367 | 0.138 | 0.862 | 0.679 | 0.164 | 0.321 | 0.836 |
 | mutagenesis-chains | H | euclidean | strict | exp | 0.8 | 0.655 | 36 | 116 | 14 | 24 | 0.6 | 0.4 | 0.108 | 0.892 | 0.72 | 0.171 | 0.28 | 0.829 |
+| mutagenesis-chains | AvgH | manhattan | additive | strict | 0.795 | 0.649 | 36 | 115 | 15 | 24 | 0.6 | 0.4 | 0.115 | 0.885 | 0.706 | 0.173 | 0.294 | 0.827 |
 | mutagenesis-chains | H | euclidean | inverse_additive | exp | 0.8 | 0.648 | 35 | 117 | 13 | 25 | 0.583 | 0.417 | 0.1 | 0.9 | 0.729 | 0.176 | 0.271 | 0.824 |
+| mutagenesis-chains | H | manhattan | additive | strict | 0.758 | 0.646 | 42 | 102 | 28 | 18 | 0.7 | 0.3 | 0.215 | 0.785 | 0.6 | 0.15 | 0.4 | 0.85 |
 | mutagenesis-chains | SumMin | euclidean | strict | strict | 0.784 | 0.643 | 37 | 112 | 18 | 23 | 0.617 | 0.383 | 0.138 | 0.862 | 0.673 | 0.17 | 0.327 | 0.83 |
 | mutagenesis-chains | AvgH | euclidean | additive | strict | 0.789 | 0.643 | 36 | 114 | 16 | 24 | 0.6 | 0.4 | 0.123 | 0.877 | 0.692 | 0.174 | 0.308 | 0.826 |
 | mutagenesis-chains | H | euclidean | strict | inverse_additive | 0.816 | 0.639 | 31 | 124 | 6 | 29 | 0.517 | 0.483 | 0.046 | 0.954 | 0.838 | 0.19 | 0.162 | 0.81 |
 | mutagenesis-chains | MinH | euclidean | exp | strict | 0.779 | 0.638 | 37 | 111 | 19 | 23 | 0.617 | 0.383 | 0.146 | 0.854 | 0.661 | 0.172 | 0.339 | 0.828 |
 | mutagenesis-chains | link | euclidean | strict | None | 0.779 | 0.632 | 36 | 112 | 18 | 24 | 0.6 | 0.4 | 0.138 | 0.862 | 0.667 | 0.176 | 0.333 | 0.824 |
+| mutagenesis-chains | SumMin | manhattan | strict | strict | 0.779 | 0.632 | 36 | 112 | 18 | 24 | 0.6 | 0.4 | 0.138 | 0.862 | 0.667 | 0.176 | 0.333 | 0.824 |
 | mutagenesis-chains | H | euclidean | inverse_additive | strict | 0.763 | 0.615 | 36 | 109 | 21 | 24 | 0.6 | 0.4 | 0.162 | 0.838 | 0.632 | 0.18 | 0.368 | 0.82 |
 | mutagenesis-chains | MinH | euclidean | exp | exp | 0.768 | 0.614 | 35 | 111 | 19 | 25 | 0.583 | 0.417 | 0.146 | 0.854 | 0.648 | 0.184 | 0.352 | 0.816 |
 | mutagenesis-chains | H | euclidean | exp | inverse_additive | 0.805 | 0.611 | 29 | 124 | 6 | 31 | 0.483 | 0.517 | 0.046 | 0.954 | 0.829 | 0.2 | 0.171 | 0.8 |
 | mutagenesis-chains | H | euclidean | exp | exp | 0.779 | 0.611 | 33 | 115 | 15 | 27 | 0.55 | 0.45 | 0.115 | 0.885 | 0.688 | 0.19 | 0.312 | 0.81 |
+| mutagenesis-chains | H | manhattan | strict | strict | 0.768 | 0.607 | 34 | 112 | 18 | 26 | 0.567 | 0.433 | 0.138 | 0.862 | 0.654 | 0.188 | 0.346 | 0.812 |
 | mutagenesis-chains | H | euclidean | exp | strict | 0.753 | 0.598 | 35 | 108 | 22 | 25 | 0.583 | 0.417 | 0.169 | 0.831 | 0.614 | 0.188 | 0.386 | 0.812 |
 | mutagenesis-chains | H | euclidean | additive | exp | 0.737 | 0.597 | 37 | 103 | 27 | 23 | 0.617 | 0.383 | 0.208 | 0.792 | 0.578 | 0.183 | 0.422 | 0.817 |
 | mutagenesis-chains | H | euclidean | strict | strict | 0.763 | 0.595 | 33 | 112 | 18 | 27 | 0.55 | 0.45 | 0.138 | 0.862 | 0.647 | 0.194 | 0.353 | 0.806 |
@@ -35,6 +40,7 @@
 | mutagenesis-chains | MinH | euclidean | strict | exp | 0.763 | 0.587 | 32 | 113 | 17 | 28 | 0.533 | 0.467 | 0.131 | 0.869 | 0.653 | 0.199 | 0.347 | 0.801 |
 | mutagenesis-chains | AvgH | euclidean | strict | strict | 0.774 | 0.583 | 30 | 117 | 13 | 30 | 0.5 | 0.5 | 0.1 | 0.9 | 0.698 | 0.204 | 0.302 | 0.796 |
 | mutagenesis-chains | H | euclidean | additive | strict | 0.721 | 0.583 | 37 | 100 | 30 | 23 | 0.617 | 0.383 | 0.231 | 0.769 | 0.552 | 0.187 | 0.448 | 0.813 |
+| mutagenesis-chains | AvgH | manhattan | strict | strict | 0.763 | 0.571 | 30 | 115 | 15 | 30 | 0.5 | 0.5 | 0.115 | 0.885 | 0.667 | 0.207 | 0.333 | 0.793 |
 | mutagenesis-chains | surj | euclidean | additive | None | 0.742 | 0.566 | 32 | 109 | 21 | 28 | 0.533 | 0.467 | 0.162 | 0.838 | 0.604 | 0.204 | 0.396 | 0.796 |
 | mutagenesis-chains | surj | euclidean | exp | None | 0.763 | 0.563 | 29 | 116 | 14 | 31 | 0.483 | 0.517 | 0.108 | 0.892 | 0.674 | 0.211 | 0.326 | 0.789 |
 | mutagenesis-chains | SumMin | euclidean | inverse_additive | inverse_additive | 0.516 | 0.562 | 59 | 39 | 91 | 1 | 0.983 | 0.017 | 0.7 | 0.3 | 0.393 | 0.025 | 0.607 | 0.975 |
@@ -43,6 +49,7 @@
 | mutagenesis-chains | H | euclidean | average | exp | 0.637 | 0.555 | 43 | 78 | 52 | 17 | 0.717 | 0.283 | 0.4 | 0.6 | 0.453 | 0.179 | 0.547 | 0.821 |
 | mutagenesis-chains | surj | euclidean | inverse_additive | None | 0.753 | 0.552 | 29 | 114 | 16 | 31 | 0.483 | 0.517 | 0.123 | 0.877 | 0.644 | 0.214 | 0.356 | 0.786 |
 | mutagenesis-chains | surj | euclidean | strict | None | 0.758 | 0.54 | 27 | 117 | 13 | 33 | 0.45 | 0.55 | 0.1 | 0.9 | 0.675 | 0.22 | 0.325 | 0.78 |
+| mutagenesis-chains | surj | manhattan | strict | None | 0.758 | 0.54 | 27 | 117 | 13 | 33 | 0.45 | 0.55 | 0.1 | 0.9 | 0.675 | 0.22 | 0.325 | 0.78 |
 | mutagenesis-chains | AvgH | euclidean | exp | exp | 0.779 | 0.523 | 23 | 125 | 5 | 37 | 0.383 | 0.617 | 0.038 | 0.962 | 0.821 | 0.228 | 0.179 | 0.772 |
 | mutagenesis-chains | H | euclidean | exp | additive | 0.784 | 0.506 | 21 | 128 | 2 | 39 | 0.35 | 0.65 | 0.015 | 0.985 | 0.913 | 0.234 | 0.087 | 0.766 |
 | mutagenesis-chains | H | euclidean | inverse_additive | inverse_additive | 0.768 | 0.5 | 22 | 124 | 6 | 38 | 0.367 | 0.633 | 0.046 | 0.954 | 0.786 | 0.235 | 0.214 | 0.765 |
@@ -56,6 +63,7 @@
 | mutagenesis-chains | SumMin | euclidean | average | inverse_additive | 0.332 | 0.486 | 60 | 3 | 127 | 0 | 1.0 | 0.0 | 0.977 | 0.023 | 0.321 | 0.0 | 0.679 | 1.0 |
 | mutagenesis-chains | MinH | euclidean | strict | strict | 0.742 | 0.484 | 23 | 118 | 12 | 37 | 0.383 | 0.617 | 0.092 | 0.908 | 0.657 | 0.239 | 0.343 | 0.761 |
 | mutagenesis-chains | SumMin | euclidean | additive | additive | 0.326 | 0.484 | 60 | 2 | 128 | 0 | 1.0 | 0.0 | 0.985 | 0.015 | 0.319 | 0.0 | 0.681 | 1.0 |
+| mutagenesis-chains | MinH | manhattan | strict | strict | 0.742 | 0.484 | 23 | 118 | 12 | 37 | 0.383 | 0.617 | 0.092 | 0.908 | 0.657 | 0.239 | 0.343 | 0.761 |
 | mutagenesis-chains | SumMin | euclidean | average | additive | 0.316 | 0.48 | 60 | 0 | 130 | 0 | 1.0 | 0.0 | 1.0 | 0.0 | 0.316 | Nan | 0.684 | Nan |
 | mutagenesis-chains | SumMin | euclidean | additive | average | 0.316 | 0.48 | 60 | 0 | 130 | 0 | 1.0 | 0.0 | 1.0 | 0.0 | 0.316 | Nan | 0.684 | Nan |
 | mutagenesis-chains | SumMin | euclidean | inverse_additive | average | 0.316 | 0.48 | 60 | 0 | 130 | 0 | 1.0 | 0.0 | 1.0 | 0.0 | 0.316 | Nan | 0.684 | Nan |
@@ -68,6 +76,7 @@
 | mutagenesis-chains | MinH | euclidean | average | additive | 0.716 | 0.46 | 23 | 113 | 17 | 37 | 0.383 | 0.617 | 0.131 | 0.869 | 0.575 | 0.247 | 0.425 | 0.753 |
 | mutagenesis-chains | MinH | euclidean | additive | exp | 0.684 | 0.455 | 25 | 105 | 25 | 35 | 0.417 | 0.583 | 0.192 | 0.808 | 0.5 | 0.25 | 0.5 | 0.75 |
 | mutagenesis-chains | MinH | euclidean | inverse_additive | strict | 0.758 | 0.452 | 19 | 125 | 5 | 41 | 0.317 | 0.683 | 0.038 | 0.962 | 0.792 | 0.247 | 0.208 | 0.753 |
+| mutagenesis-chains | MinH | manhattan | additive | strict | 0.668 | 0.452 | 26 | 101 | 29 | 34 | 0.433 | 0.567 | 0.223 | 0.777 | 0.473 | 0.252 | 0.527 | 0.748 |
 | mutagenesis-chains | MinH | euclidean | additive | strict | 0.679 | 0.45 | 25 | 104 | 26 | 35 | 0.417 | 0.583 | 0.2 | 0.8 | 0.49 | 0.252 | 0.51 | 0.748 |
 | mutagenesis-chains | SumMin | euclidean | strict | additive | 0.363 | 0.442 | 48 | 21 | 109 | 12 | 0.8 | 0.2 | 0.838 | 0.162 | 0.306 | 0.364 | 0.694 | 0.636 |
 | mutagenesis-chains | H | euclidean | inverse_additive | additive | 0.758 | 0.425 | 17 | 127 | 3 | 43 | 0.283 | 0.717 | 0.023 | 0.977 | 0.85 | 0.253 | 0.15 | 0.747 |

@@ -30,6 +30,10 @@
 | westEast | H | euclidean | exp | inverse_additive | 0.75 | 0.783 | 9 | 6 | 4 | 1 | 0.9 | 0.1 | 0.4 | 0.6 | 0.692 | 0.143 | 0.308 | 0.857 |
 | westEast | AvgH | euclidean | inverse_additive | exp | 0.75 | 0.783 | 9 | 6 | 4 | 1 | 0.9 | 0.1 | 0.4 | 0.6 | 0.692 | 0.143 | 0.308 | 0.857 |
 | westEast | H | euclidean | exp | exp | 0.75 | 0.783 | 9 | 6 | 4 | 1 | 0.9 | 0.1 | 0.4 | 0.6 | 0.692 | 0.143 | 0.308 | 0.857 |
+| westEast | H | euclidean | average | average | 0.75 | 0.783 | 9 | 6 | 4 | 1 | 0.9 | 0.1 | 0.4 | 0.6 | 0.692 | 0.143 | 0.308 | 0.857 |
+| westEast | AvgH | euclidean | average | average | 0.75 | 0.783 | 9 | 6 | 4 | 1 | 0.9 | 0.1 | 0.4 | 0.6 | 0.692 | 0.143 | 0.308 | 0.857 |
+| westEast | MinH | euclidean | average | average | 0.75 | 0.783 | 9 | 6 | 4 | 1 | 0.9 | 0.1 | 0.4 | 0.6 | 0.692 | 0.143 | 0.308 | 0.857 |
+| westEast | link | manhattan | strict | None | 0.75 | 0.783 | 9 | 6 | 4 | 1 | 0.9 | 0.1 | 0.4 | 0.6 | 0.692 | 0.143 | 0.308 | 0.857 |
 | westEast | MinH | euclidean | additive | inverse_additive | 0.75 | 0.762 | 8 | 7 | 3 | 2 | 0.8 | 0.2 | 0.3 | 0.7 | 0.727 | 0.222 | 0.273 | 0.778 |
 | westEast | link | euclidean | strict | None | 0.75 | 0.737 | 7 | 8 | 2 | 3 | 0.7 | 0.3 | 0.2 | 0.8 | 0.778 | 0.273 | 0.222 | 0.727 |
 | westEast | surj | euclidean | strict | None | 0.75 | 0.737 | 7 | 8 | 2 | 3 | 0.7 | 0.3 | 0.2 | 0.8 | 0.778 | 0.273 | 0.222 | 0.727 |
@@ -67,6 +71,7 @@
 | westEast | MinH | euclidean | additive | exp | 0.65 | 0.667 | 7 | 6 | 4 | 3 | 0.7 | 0.3 | 0.4 | 0.6 | 0.636 | 0.333 | 0.364 | 0.667 |
 | westEast | MinH | euclidean | inverse_additive | exp | 0.65 | 0.667 | 7 | 6 | 4 | 3 | 0.7 | 0.3 | 0.4 | 0.6 | 0.636 | 0.333 | 0.364 | 0.667 |
 | westEast | MinH | euclidean | exp | exp | 0.65 | 0.667 | 7 | 6 | 4 | 3 | 0.7 | 0.3 | 0.4 | 0.6 | 0.636 | 0.333 | 0.364 | 0.667 |
+| westEast | surj | manhattan | strict | None | 0.65 | 0.667 | 7 | 6 | 4 | 3 | 0.7 | 0.3 | 0.4 | 0.6 | 0.636 | 0.333 | 0.364 | 0.667 |
 | westEast | AvgH | euclidean | strict | strict | 0.65 | 0.632 | 6 | 7 | 3 | 4 | 0.6 | 0.4 | 0.3 | 0.7 | 0.667 | 0.364 | 0.333 | 0.636 |
 | westEast | link | euclidean | exp | None | 0.65 | 0.632 | 6 | 7 | 3 | 4 | 0.6 | 0.4 | 0.3 | 0.7 | 0.667 | 0.364 | 0.333 | 0.636 |
 | westEast | surj | euclidean | exp | None | 0.6 | 0.6 | 6 | 6 | 4 | 4 | 0.6 | 0.4 | 0.4 | 0.6 | 0.6 | 0.4 | 0.4 | 0.6 |
@@ -79,14 +84,18 @@
 | westEast | H | euclidean | strict | inverse_additive | 0.55 | 0.526 | 5 | 6 | 4 | 5 | 0.5 | 0.5 | 0.4 | 0.6 | 0.556 | 0.455 | 0.444 | 0.545 |
 | westEast | MinH | euclidean | strict | inverse_additive | 0.55 | 0.526 | 5 | 6 | 4 | 5 | 0.5 | 0.5 | 0.4 | 0.6 | 0.556 | 0.455 | 0.444 | 0.545 |
 | westEast | MinH | euclidean | exp | inverse_additive | 0.55 | 0.526 | 5 | 6 | 4 | 5 | 0.5 | 0.5 | 0.4 | 0.6 | 0.556 | 0.455 | 0.444 | 0.545 |
+| westEast | AvgH | manhattan | strict | strict | 0.55 | 0.526 | 5 | 6 | 4 | 5 | 0.5 | 0.5 | 0.4 | 0.6 | 0.556 | 0.455 | 0.444 | 0.545 |
+| westEast | MinH | manhattan | strict | strict | 0.55 | 0.526 | 5 | 6 | 4 | 5 | 0.5 | 0.5 | 0.4 | 0.6 | 0.556 | 0.455 | 0.444 | 0.545 |
 | westEast | surj | euclidean | inverse_additive | None | 0.55 | 0.471 | 4 | 7 | 3 | 6 | 0.4 | 0.6 | 0.3 | 0.7 | 0.571 | 0.462 | 0.429 | 0.538 |
 | westEast | MinH | euclidean | strict | additive | 0.55 | 0.471 | 4 | 7 | 3 | 6 | 0.4 | 0.6 | 0.3 | 0.7 | 0.571 | 0.462 | 0.429 | 0.538 |
 | westEast | AvgH | euclidean | strict | exp | 0.55 | 0.471 | 4 | 7 | 3 | 6 | 0.4 | 0.6 | 0.3 | 0.7 | 0.571 | 0.462 | 0.429 | 0.538 |
 | westEast | SumMin | euclidean | inverse_additive | strict | 0.65 | 0.462 | 3 | 10 | 0 | 7 | 0.3 | 0.7 | 0.0 | 1.0 | 1.0 | 0.412 | 0.0 | 0.588 |
 | westEast | SumMin | euclidean | exp | strict | 0.65 | 0.462 | 3 | 10 | 0 | 7 | 0.3 | 0.7 | 0.0 | 1.0 | 1.0 | 0.412 | 0.0 | 0.588 |
 | westEast | SumMin | euclidean | strict | exp | 0.65 | 0.462 | 3 | 10 | 0 | 7 | 0.3 | 0.7 | 0.0 | 1.0 | 1.0 | 0.412 | 0.0 | 0.588 |
+| westEast | H | manhattan | strict | strict | 0.5 | 0.444 | 4 | 6 | 4 | 6 | 0.4 | 0.6 | 0.4 | 0.6 | 0.5 | 0.5 | 0.5 | 0.5 |
 | westEast | SumMin | euclidean | strict | strict | 0.6 | 0.429 | 3 | 9 | 1 | 7 | 0.3 | 0.7 | 0.1 | 0.9 | 0.75 | 0.438 | 0.25 | 0.562 |
 | westEast | SumMin | euclidean | exp | exp | 0.6 | 0.333 | 2 | 10 | 0 | 8 | 0.2 | 0.8 | 0.0 | 1.0 | 1.0 | 0.444 | 0.0 | 0.556 |
+| westEast | SumMin | manhattan | strict | strict | 0.6 | 0.333 | 2 | 10 | 0 | 8 | 0.2 | 0.8 | 0.0 | 1.0 | 1.0 | 0.444 | 0.0 | 0.556 |
 | westEast | SumMin | euclidean | additive | strict | 0.55 | 0.182 | 1 | 10 | 0 | 9 | 0.1 | 0.9 | 0.0 | 1.0 | 1.0 | 0.474 | 0.0 | 0.526 |
 | westEast | SumMin | euclidean | average | strict | 0.55 | 0.182 | 1 | 10 | 0 | 9 | 0.1 | 0.9 | 0.0 | 1.0 | 1.0 | 0.474 | 0.0 | 0.526 |
 | westEast | SumMin | euclidean | additive | exp | 0.55 | 0.182 | 1 | 10 | 0 | 9 | 0.1 | 0.9 | 0.0 | 1.0 | 1.0 | 0.474 | 0.0 | 0.526 |
@@ -106,3 +115,4 @@
 | westEast | SumMin | euclidean | additive | average | 0.5 | 0.0 | 0 | 10 | 0 | 10 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.5 | Nan | 0.5 |
 | westEast | SumMin | euclidean | inverse_additive | average | 0.5 | 0.0 | 0 | 10 | 0 | 10 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.5 | Nan | 0.5 |
 | westEast | SumMin | euclidean | exp | average | 0.5 | 0.0 | 0 | 10 | 0 | 10 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.5 | Nan | 0.5 |
+| westEast | SumMin | euclidean | average | average | 0.5 | 0.0 | 0 | 10 | 0 | 10 | 0.0 | 1.0 | 0.0 | 1.0 | Nan | 0.5 | Nan | 0.5 |

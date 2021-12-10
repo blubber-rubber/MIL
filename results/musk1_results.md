@@ -15,14 +15,18 @@
 | musk1 | AvgH | euclidean | inverse_additive | strict | 0.922 | 0.904 | 33 | 50 | 0 | 7 | 0.825 | 0.175 | 0.0 | 1.0 | 1.0 | 0.123 | 0.0 | 0.877 |
 | musk1 | SumMin | euclidean | inverse_additive | strict | 0.922 | 0.904 | 33 | 50 | 0 | 7 | 0.825 | 0.175 | 0.0 | 1.0 | 1.0 | 0.123 | 0.0 | 0.877 |
 | musk1 | AvgH | euclidean | exp | exp | 0.922 | 0.904 | 33 | 50 | 0 | 7 | 0.825 | 0.175 | 0.0 | 1.0 | 1.0 | 0.123 | 0.0 | 0.877 |
+| musk1 | MinH | manhattan | strict | strict | 0.911 | 0.897 | 35 | 47 | 3 | 5 | 0.875 | 0.125 | 0.06 | 0.94 | 0.921 | 0.096 | 0.079 | 0.904 |
+| musk1 | SumMin | manhattan | strict | strict | 0.911 | 0.897 | 35 | 47 | 3 | 5 | 0.875 | 0.125 | 0.06 | 0.94 | 0.921 | 0.096 | 0.079 | 0.904 |
 | musk1 | link | euclidean | inverse_additive | None | 0.911 | 0.895 | 34 | 48 | 2 | 6 | 0.85 | 0.15 | 0.04 | 0.96 | 0.944 | 0.111 | 0.056 | 0.889 |
 | musk1 | link | euclidean | exp | None | 0.911 | 0.895 | 34 | 48 | 2 | 6 | 0.85 | 0.15 | 0.04 | 0.96 | 0.944 | 0.111 | 0.056 | 0.889 |
 | musk1 | fair_surj | euclidean | exp | None | 0.911 | 0.895 | 34 | 48 | 2 | 6 | 0.85 | 0.15 | 0.04 | 0.96 | 0.944 | 0.111 | 0.056 | 0.889 |
+| musk1 | AvgH | manhattan | strict | strict | 0.911 | 0.895 | 34 | 48 | 2 | 6 | 0.85 | 0.15 | 0.04 | 0.96 | 0.944 | 0.111 | 0.056 | 0.889 |
 | musk1 | MinH | euclidean | inverse_additive | strict | 0.911 | 0.892 | 33 | 49 | 1 | 7 | 0.825 | 0.175 | 0.02 | 0.98 | 0.971 | 0.125 | 0.029 | 0.875 |
 | musk1 | surj | euclidean | exp | None | 0.911 | 0.892 | 33 | 49 | 1 | 7 | 0.825 | 0.175 | 0.02 | 0.98 | 0.971 | 0.125 | 0.029 | 0.875 |
 | musk1 | SumMin | euclidean | strict | exp | 0.889 | 0.881 | 37 | 43 | 7 | 3 | 0.925 | 0.075 | 0.14 | 0.86 | 0.841 | 0.065 | 0.159 | 0.935 |
 | musk1 | SumMin | euclidean | strict | inverse_additive | 0.889 | 0.881 | 37 | 43 | 7 | 3 | 0.925 | 0.075 | 0.14 | 0.86 | 0.841 | 0.065 | 0.159 | 0.935 |
 | musk1 | SumMin | euclidean | strict | additive | 0.889 | 0.881 | 37 | 43 | 7 | 3 | 0.925 | 0.075 | 0.14 | 0.86 | 0.841 | 0.065 | 0.159 | 0.935 |
+| musk1 | surj | manhattan | strict | None | 0.9 | 0.88 | 33 | 48 | 2 | 7 | 0.825 | 0.175 | 0.04 | 0.96 | 0.943 | 0.127 | 0.057 | 0.873 |
 | musk1 | MinH | euclidean | strict | strict | 0.889 | 0.878 | 36 | 44 | 6 | 4 | 0.9 | 0.1 | 0.12 | 0.88 | 0.857 | 0.083 | 0.143 | 0.917 |
 | musk1 | MinH | euclidean | strict | strict | 0.889 | 0.878 | 36 | 44 | 6 | 4 | 0.9 | 0.1 | 0.12 | 0.88 | 0.857 | 0.083 | 0.143 | 0.917 |
 | musk1 | MinH | euclidean | strict | inverse_additive | 0.889 | 0.878 | 36 | 44 | 6 | 4 | 0.9 | 0.1 | 0.12 | 0.88 | 0.857 | 0.083 | 0.143 | 0.917 |
@@ -33,6 +37,7 @@
 | musk1 | H | euclidean | exp | additive | 0.9 | 0.873 | 31 | 50 | 0 | 9 | 0.775 | 0.225 | 0.0 | 1.0 | 1.0 | 0.153 | 0.0 | 0.847 |
 | musk1 | AvgH | euclidean | exp | inverse_additive | 0.9 | 0.873 | 31 | 50 | 0 | 9 | 0.775 | 0.225 | 0.0 | 1.0 | 1.0 | 0.153 | 0.0 | 0.847 |
 | musk1 | AvgH | euclidean | exp | additive | 0.9 | 0.873 | 31 | 50 | 0 | 9 | 0.775 | 0.225 | 0.0 | 1.0 | 1.0 | 0.153 | 0.0 | 0.847 |
+| musk1 | link | manhattan | strict | None | 0.889 | 0.868 | 33 | 47 | 3 | 7 | 0.825 | 0.175 | 0.06 | 0.94 | 0.917 | 0.13 | 0.083 | 0.87 |
 | musk1 | SumMin | euclidean | exp | additive | 0.878 | 0.867 | 36 | 43 | 7 | 4 | 0.9 | 0.1 | 0.14 | 0.86 | 0.837 | 0.085 | 0.163 | 0.915 |
 | musk1 | surj | euclidean | strict | None | 0.889 | 0.865 | 32 | 48 | 2 | 8 | 0.8 | 0.2 | 0.04 | 0.96 | 0.941 | 0.143 | 0.059 | 0.857 |
 | musk1 | surj | euclidean | strict | None | 0.889 | 0.865 | 32 | 48 | 2 | 8 | 0.8 | 0.2 | 0.04 | 0.96 | 0.941 | 0.143 | 0.059 | 0.857 |
@@ -60,6 +65,7 @@
 | musk1 | MinH | euclidean | exp | average | 0.867 | 0.833 | 30 | 48 | 2 | 10 | 0.75 | 0.25 | 0.04 | 0.96 | 0.938 | 0.172 | 0.062 | 0.828 |
 | musk1 | SumMin | euclidean | inverse_additive | exp | 0.856 | 0.831 | 32 | 45 | 5 | 8 | 0.8 | 0.2 | 0.1 | 0.9 | 0.865 | 0.151 | 0.135 | 0.849 |
 | musk1 | MinH | euclidean | inverse_additive | additive | 0.867 | 0.824 | 28 | 50 | 0 | 12 | 0.7 | 0.3 | 0.0 | 1.0 | 1.0 | 0.194 | 0.0 | 0.806 |
+| musk1 | SumMin | manhattan | additive | strict | 0.867 | 0.824 | 28 | 50 | 0 | 12 | 0.7 | 0.3 | 0.0 | 1.0 | 1.0 | 0.194 | 0.0 | 0.806 |
 | musk1 | SumMin | euclidean | inverse_additive | inverse_additive | 0.844 | 0.821 | 32 | 44 | 6 | 8 | 0.8 | 0.2 | 0.12 | 0.88 | 0.842 | 0.154 | 0.158 | 0.846 |
 | musk1 | SumMin | euclidean | inverse_additive | additive | 0.844 | 0.821 | 32 | 44 | 6 | 8 | 0.8 | 0.2 | 0.12 | 0.88 | 0.842 | 0.154 | 0.158 | 0.846 |
 | musk1 | SumMin | euclidean | strict | average | 0.833 | 0.819 | 34 | 41 | 9 | 6 | 0.85 | 0.15 | 0.18 | 0.82 | 0.791 | 0.128 | 0.209 | 0.872 |
@@ -67,6 +73,7 @@
 | musk1 | SumMin | euclidean | additive | additive | 0.844 | 0.816 | 31 | 45 | 5 | 9 | 0.775 | 0.225 | 0.1 | 0.9 | 0.861 | 0.167 | 0.139 | 0.833 |
 | musk1 | SumMin | euclidean | exp | average | 0.833 | 0.815 | 33 | 42 | 8 | 7 | 0.825 | 0.175 | 0.16 | 0.84 | 0.805 | 0.143 | 0.195 | 0.857 |
 | musk1 | SumMin | euclidean | average | average | 0.856 | 0.812 | 28 | 49 | 1 | 12 | 0.7 | 0.3 | 0.02 | 0.98 | 0.966 | 0.197 | 0.034 | 0.803 |
+| musk1 | link | manhattan | additive | None | 0.856 | 0.812 | 28 | 49 | 1 | 12 | 0.7 | 0.3 | 0.02 | 0.98 | 0.966 | 0.197 | 0.034 | 0.803 |
 | musk1 | AvgH | euclidean | inverse_additive | inverse_additive | 0.856 | 0.806 | 27 | 50 | 0 | 13 | 0.675 | 0.325 | 0.0 | 1.0 | 1.0 | 0.206 | 0.0 | 0.794 |
 | musk1 | AvgH | euclidean | inverse_additive | additive | 0.856 | 0.806 | 27 | 50 | 0 | 13 | 0.675 | 0.325 | 0.0 | 1.0 | 1.0 | 0.206 | 0.0 | 0.794 |
 | musk1 | H | euclidean | exp | exp | 0.856 | 0.806 | 27 | 50 | 0 | 13 | 0.675 | 0.325 | 0.0 | 1.0 | 1.0 | 0.206 | 0.0 | 0.794 |
@@ -74,6 +81,7 @@
 | musk1 | H | euclidean | strict | average | 0.833 | 0.8 | 30 | 45 | 5 | 10 | 0.75 | 0.25 | 0.1 | 0.9 | 0.857 | 0.182 | 0.143 | 0.818 |
 | musk1 | AvgH | euclidean | strict | average | 0.833 | 0.8 | 30 | 45 | 5 | 10 | 0.75 | 0.25 | 0.1 | 0.9 | 0.857 | 0.182 | 0.143 | 0.818 |
 | musk1 | MinH | euclidean | strict | average | 0.833 | 0.8 | 30 | 45 | 5 | 10 | 0.75 | 0.25 | 0.1 | 0.9 | 0.857 | 0.182 | 0.143 | 0.818 |
+| musk1 | surj | manhattan | additive | None | 0.844 | 0.794 | 27 | 49 | 1 | 13 | 0.675 | 0.325 | 0.02 | 0.98 | 0.964 | 0.21 | 0.036 | 0.79 |
 | musk1 | SumMin | euclidean | inverse_additive | average | 0.822 | 0.789 | 30 | 44 | 6 | 10 | 0.75 | 0.25 | 0.12 | 0.88 | 0.833 | 0.185 | 0.167 | 0.815 |
 | musk1 | H | euclidean | inverse_additive | strict | 0.844 | 0.788 | 26 | 50 | 0 | 14 | 0.65 | 0.35 | 0.0 | 1.0 | 1.0 | 0.219 | 0.0 | 0.781 |
 | musk1 | MinH | euclidean | additive | strict | 0.833 | 0.769 | 25 | 50 | 0 | 15 | 0.625 | 0.375 | 0.0 | 1.0 | 1.0 | 0.231 | 0.0 | 0.769 |
@@ -86,10 +94,12 @@
 | musk1 | H | euclidean | inverse_additive | inverse_additive | 0.822 | 0.75 | 24 | 50 | 0 | 16 | 0.6 | 0.4 | 0.0 | 1.0 | 1.0 | 0.242 | 0.0 | 0.758 |
 | musk1 | H | euclidean | inverse_additive | additive | 0.822 | 0.75 | 24 | 50 | 0 | 16 | 0.6 | 0.4 | 0.0 | 1.0 | 1.0 | 0.242 | 0.0 | 0.758 |
 | musk1 | surj | euclidean | additive | None | 0.8 | 0.743 | 26 | 46 | 4 | 14 | 0.65 | 0.35 | 0.08 | 0.92 | 0.867 | 0.233 | 0.133 | 0.767 |
+| musk1 | H | manhattan | strict | strict | 0.8 | 0.743 | 26 | 46 | 4 | 14 | 0.65 | 0.35 | 0.08 | 0.92 | 0.867 | 0.233 | 0.133 | 0.767 |
 | musk1 | fair_surj | euclidean | average | None | 0.789 | 0.732 | 26 | 45 | 5 | 14 | 0.65 | 0.35 | 0.1 | 0.9 | 0.839 | 0.237 | 0.161 | 0.763 |
 | musk1 | MinH | euclidean | additive | exp | 0.811 | 0.73 | 23 | 50 | 0 | 17 | 0.575 | 0.425 | 0.0 | 1.0 | 1.0 | 0.254 | 0.0 | 0.746 |
 | musk1 | SumMin | euclidean | average | strict | 0.811 | 0.73 | 23 | 50 | 0 | 17 | 0.575 | 0.425 | 0.0 | 1.0 | 1.0 | 0.254 | 0.0 | 0.746 |
 | musk1 | SumMin | euclidean | average | exp | 0.811 | 0.73 | 23 | 50 | 0 | 17 | 0.575 | 0.425 | 0.0 | 1.0 | 1.0 | 0.254 | 0.0 | 0.746 |
+| musk1 | MinH | manhattan | additive | strict | 0.811 | 0.73 | 23 | 50 | 0 | 17 | 0.575 | 0.425 | 0.0 | 1.0 | 1.0 | 0.254 | 0.0 | 0.746 |
 | musk1 | surj | euclidean | average | None | 0.789 | 0.716 | 24 | 47 | 3 | 16 | 0.6 | 0.4 | 0.06 | 0.94 | 0.889 | 0.254 | 0.111 | 0.746 |
 | musk1 | H | euclidean | inverse_additive | average | 0.767 | 0.667 | 21 | 48 | 2 | 19 | 0.525 | 0.475 | 0.04 | 0.96 | 0.913 | 0.284 | 0.087 | 0.716 |
 | musk1 | AvgH | euclidean | inverse_additive | average | 0.767 | 0.667 | 21 | 48 | 2 | 19 | 0.525 | 0.475 | 0.04 | 0.96 | 0.913 | 0.284 | 0.087 | 0.716 |
@@ -104,6 +114,8 @@
 | musk1 | H | euclidean | additive | average | 0.722 | 0.545 | 15 | 50 | 0 | 25 | 0.375 | 0.625 | 0.0 | 1.0 | 1.0 | 0.333 | 0.0 | 0.667 |
 | musk1 | AvgH | euclidean | additive | average | 0.722 | 0.545 | 15 | 50 | 0 | 25 | 0.375 | 0.625 | 0.0 | 1.0 | 1.0 | 0.333 | 0.0 | 0.667 |
 | musk1 | MinH | euclidean | additive | average | 0.722 | 0.545 | 15 | 50 | 0 | 25 | 0.375 | 0.625 | 0.0 | 1.0 | 1.0 | 0.333 | 0.0 | 0.667 |
+| musk1 | H | manhattan | additive | strict | 0.722 | 0.545 | 15 | 50 | 0 | 25 | 0.375 | 0.625 | 0.0 | 1.0 | 1.0 | 0.333 | 0.0 | 0.667 |
+| musk1 | AvgH | manhattan | additive | strict | 0.722 | 0.545 | 15 | 50 | 0 | 25 | 0.375 | 0.625 | 0.0 | 1.0 | 1.0 | 0.333 | 0.0 | 0.667 |
 | musk1 | H | euclidean | additive | exp | 0.711 | 0.519 | 14 | 50 | 0 | 26 | 0.35 | 0.65 | 0.0 | 1.0 | 1.0 | 0.342 | 0.0 | 0.658 |
 | musk1 | H | euclidean | additive | inverse_additive | 0.711 | 0.519 | 14 | 50 | 0 | 26 | 0.35 | 0.65 | 0.0 | 1.0 | 1.0 | 0.342 | 0.0 | 0.658 |
 | musk1 | H | euclidean | additive | strict | 0.689 | 0.462 | 12 | 50 | 0 | 28 | 0.3 | 0.7 | 0.0 | 1.0 | 1.0 | 0.359 | 0.0 | 0.641 |
