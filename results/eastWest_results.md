@@ -23,6 +23,7 @@
 | eastWest | AvgH | euclidean | average | inverse_additive | 0.8 | 0.75 | 6 | 10 | 0 | 4 | 0.6 | 0.4 | 0.0 | 1.0 | 1.0 | 0.29 | 0.0 | 0.71 |
 | eastWest | AvgH | euclidean | average | additive | 0.8 | 0.75 | 6 | 10 | 0 | 4 | 0.6 | 0.4 | 0.0 | 1.0 | 1.0 | 0.29 | 0.0 | 0.71 |
 | eastWest | MinH | euclidean | average | inverse_additive | 0.8 | 0.75 | 6 | 10 | 0 | 4 | 0.6 | 0.4 | 0.0 | 1.0 | 1.0 | 0.29 | 0.0 | 0.71 |
+| eastWest | H | euclidean | inverse_additive | exp | 0.8 | 0.75 | 6 | 10 | 0 | 4 | 0.6 | 0.4 | 0.0 | 1.0 | 1.0 | 0.29 | 0.0 | 0.71 |
 | eastWest | link | euclidean | strict | None | 0.75 | 0.74 | 7 | 8 | 2 | 3 | 0.7 | 0.3 | 0.2 | 0.8 | 0.78 | 0.27 | 0.22 | 0.73 |
 | eastWest | surj | euclidean | strict | None | 0.75 | 0.74 | 7 | 8 | 2 | 3 | 0.7 | 0.3 | 0.2 | 0.8 | 0.78 | 0.27 | 0.22 | 0.73 |
 | eastWest | AvgH | euclidean | strict | inverse_additive | 0.75 | 0.74 | 7 | 8 | 2 | 3 | 0.7 | 0.3 | 0.2 | 0.8 | 0.78 | 0.27 | 0.22 | 0.73 |
