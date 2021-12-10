@@ -1,5 +1,6 @@
 | dataset | bag distance | int_dist | ext_owa | int_owa | Accuracy | F1 | TP | TN | FP | FN | Sensitivity | False Negative Rate | False Positive Rate | Specificity | Precission | False omission rate | FDR | Negative predictive value |
 |---------|--------------|----------|---------|---------|----------|----|----|----|----|----|-------------|---------------------|---------------------|-------------|------------|---------------------|-----|---------------------------|
+| mutagenesis-chains | fair_surj | euclidean | additive | None | 0.858 | 0.791 | 51 | 112 | 18 | 9 | 0.85 | 0.15 | 0.138 | 0.862 | 0.739 | 0.074 | 0.261 | 0.926 |
 | mutagenesis-chains | SumMin | euclidean | inverse_additive | exp | 0.853 | 0.754 | 43 | 119 | 11 | 17 | 0.717 | 0.283 | 0.085 | 0.915 | 0.796 | 0.125 | 0.204 | 0.875 |
 | mutagenesis-chains | SumMin | euclidean | additive | strict | 0.821 | 0.734 | 47 | 109 | 21 | 13 | 0.783 | 0.217 | 0.162 | 0.838 | 0.691 | 0.107 | 0.309 | 0.893 |
 | mutagenesis-chains | SumMin | euclidean | strict | exp | 0.837 | 0.726 | 41 | 118 | 12 | 19 | 0.683 | 0.317 | 0.092 | 0.908 | 0.774 | 0.139 | 0.226 | 0.861 |

@@ -75,6 +75,7 @@
 | westEast | surj | manhattan | strict | None | 0.65 | 0.667 | 7 | 6 | 4 | 3 | 0.7 | 0.3 | 0.4 | 0.6 | 0.636 | 0.333 | 0.364 | 0.667 |
 | westEast | AvgH | euclidean | strict | strict | 0.65 | 0.632 | 6 | 7 | 3 | 4 | 0.6 | 0.4 | 0.3 | 0.7 | 0.667 | 0.364 | 0.333 | 0.636 |
 | westEast | link | euclidean | exp | None | 0.65 | 0.632 | 6 | 7 | 3 | 4 | 0.6 | 0.4 | 0.3 | 0.7 | 0.667 | 0.364 | 0.333 | 0.636 |
+| westEast | fair_surj | euclidean | additive | None | 0.65 | 0.632 | 6 | 7 | 3 | 4 | 0.6 | 0.4 | 0.3 | 0.7 | 0.667 | 0.364 | 0.333 | 0.636 |
 | westEast | surj | euclidean | exp | None | 0.6 | 0.6 | 6 | 6 | 4 | 4 | 0.6 | 0.4 | 0.4 | 0.6 | 0.6 | 0.4 | 0.4 | 0.6 |
 | westEast | H | euclidean | strict | exp | 0.6 | 0.6 | 6 | 6 | 4 | 4 | 0.6 | 0.4 | 0.4 | 0.6 | 0.6 | 0.4 | 0.4 | 0.6 |
 | westEast | link | euclidean | inverse_additive | None | 0.65 | 0.588 | 5 | 8 | 2 | 5 | 0.5 | 0.5 | 0.2 | 0.8 | 0.714 | 0.385 | 0.286 | 0.615 |

@@ -46,6 +46,7 @@
 | tiger | H | euclidean | inverse_additive | average | 0.74 | 0.782 | 93 | 55 | 45 | 7 | 0.93 | 0.07 | 0.45 | 0.55 | 0.674 | 0.113 | 0.326 | 0.887 |
 | tiger | AvgH | euclidean | inverse_additive | average | 0.74 | 0.782 | 93 | 55 | 45 | 7 | 0.93 | 0.07 | 0.45 | 0.55 | 0.674 | 0.113 | 0.326 | 0.887 |
 | tiger | MinH | euclidean | inverse_additive | average | 0.74 | 0.782 | 93 | 55 | 45 | 7 | 0.93 | 0.07 | 0.45 | 0.55 | 0.674 | 0.113 | 0.326 | 0.887 |
+| tiger | fair_surj | euclidean | additive | None | 0.78 | 0.782 | 79 | 77 | 23 | 21 | 0.79 | 0.21 | 0.23 | 0.77 | 0.775 | 0.214 | 0.225 | 0.786 |
 | tiger | AvgH | euclidean | inverse_additive | strict | 0.74 | 0.78 | 92 | 56 | 44 | 8 | 0.92 | 0.08 | 0.44 | 0.56 | 0.676 | 0.125 | 0.324 | 0.875 |
 | tiger | H | euclidean | inverse_additive | additive | 0.74 | 0.78 | 92 | 56 | 44 | 8 | 0.92 | 0.08 | 0.44 | 0.56 | 0.676 | 0.125 | 0.324 | 0.875 |
 | tiger | MinH | euclidean | inverse_additive | inverse_additive | 0.74 | 0.78 | 92 | 56 | 44 | 8 | 0.92 | 0.08 | 0.44 | 0.56 | 0.676 | 0.125 | 0.324 | 0.875 |

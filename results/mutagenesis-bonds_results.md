@@ -1,6 +1,7 @@
 | dataset | bag distance | int_dist | ext_owa | int_owa | Accuracy | F1 | TP | TN | FP | FN | Sensitivity | False Negative Rate | False Positive Rate | Specificity | Precission | False omission rate | FDR | Negative predictive value |
 |---------|--------------|----------|---------|---------|----------|----|----|----|----|----|-------------|---------------------|---------------------|-------------|------------|---------------------|-----|---------------------------|
 | mutagenesis-bonds | SumMin | euclidean | exp | exp | 0.853 | 0.778 | 49 | 113 | 17 | 11 | 0.817 | 0.183 | 0.131 | 0.869 | 0.742 | 0.089 | 0.258 | 0.911 |
+| mutagenesis-bonds | fair_surj | euclidean | additive | None | 0.811 | 0.76 | 57 | 97 | 33 | 3 | 0.95 | 0.05 | 0.254 | 0.746 | 0.633 | 0.03 | 0.367 | 0.97 |
 | mutagenesis-bonds | SumMin | euclidean | inverse_additive | exp | 0.837 | 0.756 | 48 | 111 | 19 | 12 | 0.8 | 0.2 | 0.146 | 0.854 | 0.716 | 0.098 | 0.284 | 0.902 |
 | mutagenesis-bonds | link | euclidean | inverse_additive | None | 0.821 | 0.75 | 51 | 105 | 25 | 9 | 0.85 | 0.15 | 0.192 | 0.808 | 0.671 | 0.079 | 0.329 | 0.921 |
 | mutagenesis-bonds | fair_surj | euclidean | strict | None | 0.826 | 0.748 | 49 | 108 | 22 | 11 | 0.817 | 0.183 | 0.169 | 0.831 | 0.69 | 0.092 | 0.31 | 0.908 |
