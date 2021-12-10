@@ -3,6 +3,7 @@
 | mutagenesis-bonds | SumMin | euclidean | exp | exp | 0.853 | 0.778 | 49 | 113 | 17 | 11 | 0.817 | 0.183 | 0.131 | 0.869 | 0.742 | 0.089 | 0.258 | 0.911 |
 | mutagenesis-bonds | SumMin | euclidean | inverse_additive | exp | 0.837 | 0.756 | 48 | 111 | 19 | 12 | 0.8 | 0.2 | 0.146 | 0.854 | 0.716 | 0.098 | 0.284 | 0.902 |
 | mutagenesis-bonds | link | euclidean | inverse_additive | None | 0.821 | 0.75 | 51 | 105 | 25 | 9 | 0.85 | 0.15 | 0.192 | 0.808 | 0.671 | 0.079 | 0.329 | 0.921 |
+| mutagenesis-bonds | fair_surj | euclidean | strict | None | 0.826 | 0.748 | 49 | 108 | 22 | 11 | 0.817 | 0.183 | 0.169 | 0.831 | 0.69 | 0.092 | 0.31 | 0.908 |
 | mutagenesis-bonds | SumMin | euclidean | inverse_additive | strict | 0.821 | 0.746 | 50 | 106 | 24 | 10 | 0.833 | 0.167 | 0.185 | 0.815 | 0.676 | 0.086 | 0.324 | 0.914 |
 | mutagenesis-bonds | link | euclidean | exp | None | 0.816 | 0.741 | 50 | 105 | 25 | 10 | 0.833 | 0.167 | 0.192 | 0.808 | 0.667 | 0.087 | 0.333 | 0.913 |
 | mutagenesis-bonds | SumMin | euclidean | exp | strict | 0.811 | 0.727 | 48 | 106 | 24 | 12 | 0.8 | 0.2 | 0.185 | 0.815 | 0.667 | 0.102 | 0.333 | 0.898 |
