@@ -18,6 +18,7 @@
 | mutagenesis-chains | AvgH | euclidean | strict | strict | 0.77 | 0.58 | 30 | 117 | 13 | 30 | 0.5 | 0.5 | 0.1 | 0.9 | 0.7 | 0.2 | 0.3 | 0.8 |
 | mutagenesis-chains | H | euclidean | additive | strict | 0.72 | 0.58 | 37 | 100 | 30 | 23 | 0.62 | 0.38 | 0.23 | 0.77 | 0.55 | 0.19 | 0.45 | 0.81 |
 | mutagenesis-chains | surj | euclidean | additive | None | 0.74 | 0.57 | 32 | 109 | 21 | 28 | 0.53 | 0.47 | 0.16 | 0.84 | 0.6 | 0.2 | 0.4 | 0.8 |
+| mutagenesis-chains | surj | euclidean | exp | None | 0.76 | 0.56 | 29 | 116 | 14 | 31 | 0.48 | 0.52 | 0.11 | 0.89 | 0.67 | 0.21 | 0.33 | 0.79 |
 | mutagenesis-chains | surj | euclidean | inverse_additive | None | 0.75 | 0.55 | 29 | 114 | 16 | 31 | 0.48 | 0.52 | 0.12 | 0.88 | 0.64 | 0.21 | 0.36 | 0.79 |
 | mutagenesis-chains | surj | euclidean | strict | None | 0.76 | 0.54 | 27 | 117 | 13 | 33 | 0.45 | 0.55 | 0.1 | 0.9 | 0.68 | 0.22 | 0.33 | 0.78 |
 | mutagenesis-chains | MinH | euclidean | strict | strict | 0.74 | 0.48 | 23 | 118 | 12 | 37 | 0.38 | 0.62 | 0.09 | 0.91 | 0.66 | 0.24 | 0.34 | 0.76 |
