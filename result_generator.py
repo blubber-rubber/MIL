@@ -37,11 +37,10 @@ def is_in_file(data, filename='result.json'):
         return False
 
 
-# (fair_surjection_distance, 'fair_surj', False)
-
 raw_bag_distances = [(hausdorff_distance, 'H', True), (hausdorff_distance_avg, 'AvgH', True),
                      (hausdorff_distance_min, 'MinH', True), (sum_of_min_distance, 'SumMin', True),
-                     (link_distance, 'link', False), (surjection_distance, 'surj', False)]
+                     (link_distance, 'link', False), (surjection_distance, 'surj', False),
+                     (fair_surjection_distance, 'fair_surj', False)]
 internal_distances = [(distance.euclidean, 'euclidean'), (distance.cityblock, 'manhattan')]
 internal_OWA = [(Owa_weights.strict, 'strict'), (Owa_weights.additive, 'additive'),
                 (Owa_weights.invadd, 'inverse_additive'), (Owa_weights.exponential, 'exp'),
@@ -60,6 +59,10 @@ if filesize == 0:
     file.close()
 
 roots = os.listdir('multiInstance')
+######
+
+
+#####
 total = len(roots) * len(raw_bag_distances) * len(internal_distances) * len(internal_OWA) * len(
     external_OWA)
 progress = 0

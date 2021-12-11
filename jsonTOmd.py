@@ -12,70 +12,70 @@ datasets = ['eastWest', 'elephant', 'fox', 'musk1', 'musk2', 'mutagenesis-atoms'
 
 def sens(tp, fn):
     try:
-        return str(round(tp / (tp + fn), 2))
+        return str(round(tp / (tp + fn), 3))
     except:
         return 'Nan'
 
 
 def fnr(fn, tp):
     try:
-        return str(round(fn / (fn + tp), 2))
+        return str(round(fn / (fn + tp), 3))
     except:
         return 'Nan'
 
 
 def fpr(fp, tn):
     try:
-        return str(round(fp / (fp + tn), 2))
+        return str(round(fp / (fp + tn), 3))
     except:
         return 'Nan'
 
 
 def spec(tn, fp):
     try:
-        return str(round(tn / (tn + fp), 2))
+        return str(round(tn / (tn + fp), 3))
     except:
         return 'Nan'
 
 
 def prec(tp, fp):
     try:
-        return str(round(tp / (tp + fp), 2))
+        return str(round(tp / (tp + fp), 3))
     except:
         return 'Nan'
 
 
 def npv(tn, fn):
     try:
-        return str(round(tn / (fn + tn), 2))
+        return str(round(tn / (fn + tn), 3))
     except:
         return 'Nan'
 
 
 def fdr(fp, tp):
     try:
-        return str(round(fp / (fp + tp), 2))
+        return str(round(fp / (fp + tp), 3))
     except:
         return 'Nan'
 
 
 def fomr(fn, tn):
     try:
-        return str(round(fn / (fn + tn), 2))
+        return str(round(fn / (fn + tn), 3))
     except:
         return 'Nan'
 
 
 def accuracy(tp, fp, tn, fn):
     try:
-        return str(round((tp + tn) / (tp + fp + fn + tn), 2))
+        return str(round((tp + tn) / (tp + fp + fn + tn), 3))
     except:
         return 'Nan'
 
 
 def f1(tp, fp, fn):
     try:
-        return str(round((2 * tp) / (2 * tp + fp + fn), 2))
+        return str(round((2 * tp) / (2 * tp + fp + fn), 3))
     except:
         return 'Nan'
 
