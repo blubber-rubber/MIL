@@ -81,6 +81,7 @@
 | westEast | link | euclidean | inverse_additive | None | 0.65 | 0.588 | 5 | 8 | 2 | 5 | 0.5 | 0.5 | 0.2 | 0.8 | 0.714 | 0.385 | 0.286 | 0.615 |
 | westEast | MinH | euclidean | strict | exp | 0.55 | 0.571 | 6 | 5 | 5 | 4 | 0.6 | 0.4 | 0.5 | 0.5 | 0.545 | 0.444 | 0.455 | 0.556 |
 | westEast | surj | euclidean | additive | None | 0.6 | 0.556 | 5 | 7 | 3 | 5 | 0.5 | 0.5 | 0.3 | 0.7 | 0.625 | 0.417 | 0.375 | 0.583 |
+| westEast | fair_surj | euclidean | inverse_additive | None | 0.6 | 0.556 | 5 | 7 | 3 | 5 | 0.5 | 0.5 | 0.3 | 0.7 | 0.625 | 0.417 | 0.375 | 0.583 |
 | westEast | H | euclidean | strict | strict | 0.55 | 0.526 | 5 | 6 | 4 | 5 | 0.5 | 0.5 | 0.4 | 0.6 | 0.556 | 0.455 | 0.444 | 0.545 |
 | westEast | MinH | euclidean | strict | strict | 0.55 | 0.526 | 5 | 6 | 4 | 5 | 0.5 | 0.5 | 0.4 | 0.6 | 0.556 | 0.455 | 0.444 | 0.545 |
 | westEast | H | euclidean | strict | inverse_additive | 0.55 | 0.526 | 5 | 6 | 4 | 5 | 0.5 | 0.5 | 0.4 | 0.6 | 0.556 | 0.455 | 0.444 | 0.545 |

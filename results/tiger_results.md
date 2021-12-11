@@ -36,6 +36,7 @@
 | tiger | AvgH | euclidean | exp | strict | 0.76 | 0.789 | 90 | 62 | 38 | 10 | 0.9 | 0.1 | 0.38 | 0.62 | 0.703 | 0.139 | 0.297 | 0.861 |
 | tiger | SumMin | euclidean | inverse_additive | strict | 0.795 | 0.788 | 76 | 83 | 17 | 24 | 0.76 | 0.24 | 0.17 | 0.83 | 0.817 | 0.224 | 0.183 | 0.776 |
 | tiger | SumMin | euclidean | exp | exp | 0.785 | 0.788 | 80 | 77 | 23 | 20 | 0.8 | 0.2 | 0.23 | 0.77 | 0.777 | 0.206 | 0.223 | 0.794 |
+| tiger | fair_surj | euclidean | inverse_additive | None | 0.78 | 0.788 | 82 | 74 | 26 | 18 | 0.82 | 0.18 | 0.26 | 0.74 | 0.759 | 0.196 | 0.241 | 0.804 |
 | tiger | AvgH | euclidean | inverse_additive | additive | 0.745 | 0.787 | 94 | 55 | 45 | 6 | 0.94 | 0.06 | 0.45 | 0.55 | 0.676 | 0.098 | 0.324 | 0.902 |
 | tiger | MinH | euclidean | strict | exp | 0.755 | 0.786 | 90 | 61 | 39 | 10 | 0.9 | 0.1 | 0.39 | 0.61 | 0.698 | 0.141 | 0.302 | 0.859 |
 | tiger | MinH | euclidean | additive | strict | 0.745 | 0.785 | 93 | 56 | 44 | 7 | 0.93 | 0.07 | 0.44 | 0.56 | 0.679 | 0.111 | 0.321 | 0.889 |
