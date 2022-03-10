@@ -30,7 +30,7 @@ with open(filename, 'r') as file:
             # accuracy
             acc = [accuracy_score(y_true, y_pred) for y_true, y_pred in zip(true, predictions)]
             # F1
-            fscore = [accuracy_score(y_true, y_pred) for y_true, y_pred in zip(true, predictions)]
+            fscore = [f1_score(y_true, y_pred) for y_true, y_pred in zip(true, predictions)]
 
             conf_matrix = confusion_matrix(list(chain(*true)), list(chain(*predictions)))
             tn, fp, fn, tp = conf_matrix.ravel()
