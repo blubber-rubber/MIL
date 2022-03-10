@@ -11,7 +11,7 @@ from Utils.Distances import *
 from scipy.spatial import distance
 from itertools import product
 from Utils import BagEncodings
-
+from BFMIC import BFMIC
 
 #################################################SET-UP#################################################################
 
@@ -27,13 +27,19 @@ raw_bag_distances = [(hausdorff_distance, 'H'), (hausdorff_distance_avg, 'AvgH')
                      (fair_surjection_distance, 'fair_surj'), (norm_link_distance, 'norm_link'),
                      (norm_surjection_distance, 'norm_surj'),
                      (norm_fair_surjection_distance, 'norm_fair_surj'),
-                     (encoding_distance, 'enc')]  # distances to consider
+                     ]  # distances to consider
 internal_distances = [(distance.euclidean, 'euclidean'),
                       (distance.cityblock, 'manhattan')]  # Distances used inside the bag-distances
 internal_OWA = [(Owa_weights.strict, 'strict'), (Owa_weights.additive, 'additive'),
                 (Owa_weights.invadd, 'inverse_additive'), (Owa_weights.exponential, 'exp'),
                 (Owa_weights.mean, 'average')]  # Owa-weights to be used
-encodings = [(BagEncodings.averageEncoding, 'avg_enc'), (BagEncodings.centerEncoding, 'center_enc')]  # Encodings to be used
+
+aggregator_OWA = [(Owa_weights.strict, 'strict'), (Owa_weights.additive, 'additive'),
+                  (Owa_weights.invadd, 'inverse_additive'), (Owa_weights.exponential, 'exp'),
+                  (Owa_weights.mean, 'average')]  # Owa-weights to be used
+
+encodings = [(BagEncodings.averageEncoding, 'avg_enc'),
+             (BagEncodings.centerEncoding, 'center_enc')]  # Encodings to be used
 
 filename = 'default_results.json'  # Where to save the results
 
@@ -77,22 +83,31 @@ if filesize == 0:
     file.write('{"results": []}')
     file.close()
 
-total = len(roots) * len(neighbours) * len(raw_bag_distances) * len(internal_distances) * len(internal_OWA) * len(
-    encodings) * len(normalizers)
+total = len(roots) *  len(raw_bag_distances) * len(internal_distances) * len(internal_OWA) * len(
+    encodings) * len(normalizers) * len(aggregator_OWA)
 progress = 0
 
-for root, k, raw_b_dists, int_dists, int_owas, encods, normals in product(roots, neighbours, raw_bag_distances,
-                                                                          internal_distances, internal_OWA, encodings,
-                                                                          normalizers):
+prev_int_dist = None
+
+for root, raw_b_dists, int_dists, int_owas, encods, normals, aggr in product(roots, raw_bag_distances,
+                                                                             internal_distances, internal_OWA,
+                                                                             encodings,
+                                                                             normalizers, aggregator_OWA):
+
     raw_b_dist, raw_b_dist_name = raw_b_dists
     int_dist, int_dist_name = int_dists
     int_owa, int_owa_name = int_owas
     enc, enc_name = encods
     normalizer, normalize_name = normals
+    aggregator, aggregator_name = aggr
+
+    if int_dist_name != prev_int_dist:
+        lazy_distance = dict()
+    prev_int_dist = int_dist_name
 
     # Info for Json-file
-    test = {'data': root, 'b_dist': raw_b_dist_name, 'int_dist': int_dist_name, 'int_owa': None, 'k': k,
-            'norm': normalize_name}
+    test = {'data': root, 'b_dist': raw_b_dist_name, 'int_dist': int_dist_name, 'int_owa': None,
+            'norm': normalize_name, 'aggr': aggregator_name}
     if raw_b_dist_name in owa_distances:
         test['int_owa'] = int_owa_name
 
@@ -119,28 +134,45 @@ for root, k, raw_b_dists, int_dists, int_owas, encods, normals in product(roots,
                     bag.iloc[:, 1:-1] = normer.transform(bag.iloc[:, 1:-1])
 
             if raw_b_dist_name in owa_distances:  # Which version of citationKNN should be used
-                def KNN(trainingb, testb):
-                    return citationKNN(training_bags, test_bag, k=k, dist=raw_b_dist, internal_dist=int_dist,
-                                       weight=int_owa, encoding=None)
+
+                def bag_distance(A, B):
+                    key = f'{A.iloc[0, 0]},{B.iloc[0, 0]},id:{int_dist_name},w:{int_owa_name}'
+                    if key not in lazy_distance:
+                        lazy_distance[key] = raw_b_dist(A.iloc[:, 1:], B.iloc[:, 1:], internal_dist=int_dist,
+                                                        weight=int_owa)
+                        key2 = f'{B.iloc[0, 0]},{A.iloc[0, 0]},id:{int_dist_name},w:{int_owa_name}'
+                        lazy_distance[key2] = lazy_distance[key]
+                    return lazy_distance[key]
 
             elif raw_b_dist_name in encoding_distances:
                 encoding = enc(training_bags, test_bags)
 
 
-                def KNN(trainingb, testb):
-                    return citationKNN(trainingb, testb, k=k, dist=raw_b_dist, internal_dist=int_dist,
-                                       weight=None, encoding=encoding)
+                def bag_distance(A, B):
+                    key = f'{A.iloc[0, 0]},{B.iloc[0, 0]},id:{int_dist_name},e:{enc_name}'
+                    if key not in lazy_distance:
+                        lazy_distance[key] = encoding_distance(A.iloc[:, 1:], B[:, 1:], internal_dist=int_dist,
+                                                               encoding=encoding)
+                        key2 = f'{B.iloc[0, 0]},{A.iloc[0, 0]},id:{int_dist_name},e:{enc_name}'
+                        lazy_distance[key2] = lazy_distance[key]
+                    return lazy_distance[key]
 
             else:
 
-                def KNN(trainingb, testb):
-                    return citationKNN(trainingb, testb, k=k, dist=raw_b_dist, internal_dist=int_dist,
-                                       weight=None, encoding=None)
+                def bag_distance(A, B):
+                    key = f'{A.iloc[0, 0]},{B.iloc[0, 0]},id:{int_dist_name}'
+                    if key not in lazy_distance:
+                        lazy_distance[key] = raw_b_dist(A.iloc[:, 1:], B.iloc[:, 1:], internal_dist=int_dist)
+                        key2 = f'{B.iloc[0, 0]},{A.iloc[0, 0]},id:{int_dist_name}'
+                        lazy_distance[key2] = lazy_distance[key]
+                    return lazy_distance[key]
 
             fold_predictions = []
             fold_true = []
+            bag_relation = lambda x, y: 1.0 / (1 + bag_distance(x, y))
             for test_bag in test_bags:
-                fold_predictions.append(KNN(training_bags, test_bag))
+                fold_predictions.append(
+                    BFMIC(training_bags, test_bag, [0, 1], bag_relation, aggregator))
                 fold_true.append(int(test_bag.iloc[0, -1]))
             y_predictions.append(''.join(str(number) for number in fold_predictions))
             y_true.append(''.join(str(number) for number in fold_true))

@@ -48,7 +48,9 @@ def surjection_distance(A, B, internal_dist=distance.euclidean):
     if len(A) < len(B):
         A, B = B, A
     distances = distance.cdist(A, B, metric=internal_dist)
-    cost_matrix = np.tile(np.min(distances, axis=1), (distances.shape[0], 1)).transpose()
+    cost_matrix = np.concatenate(
+        (distances, np.tile(np.min(distances, axis=1), (distances.shape[0] - distances.shape[1], 1)).transpose()),
+        axis=1)
     matching = linear_sum_assignment(cost_matrix)
     return cost_matrix[matching[0], matching[1]].sum()
 
@@ -98,6 +100,60 @@ def link_distance(A, B, internal_dist=distance.euclidean):
     matching = linear_sum_assignment(cost_matrix)
     return cost_matrix[matching[0], matching[1]].sum()
 
+def norm_surjection_distance(A, B, internal_dist=distance.euclidean):
+    if len(A) < len(B):
+        A, B = B, A
+    distances = distance.cdist(A, B, metric=internal_dist)
+    cost_matrix = np.concatenate(
+        (distances, np.tile(np.min(distances, axis=1), (distances.shape[0] - distances.shape[1], 1)).transpose()),
+        axis=1)
+    matching = linear_sum_assignment(cost_matrix)
+    return cost_matrix[matching[0], matching[1]].sum() / sum(distances.shape)
+
+
+def norm_fair_surjection_distance(A, B, internal_dist=distance.euclidean, precision=10):
+    if len(A) < len(B):
+        A, B = B, A
+    distances = distance.cdist(A, B, metric=internal_dist)
+
+    inf = int(round(2 * distances.sum() * 10 ** precision))
+    if inf == 0:
+        return 0
+    d1, d2 = distances.shape
+    c0, s, t = math.ceil(d1 / d2), d1 + d2 + 1, d1 + d2 + 2
+    G = nx.DiGraph()
+    edges = [(s, i + 1, {"capacity": 1, "weight": 0}) for i in range(d1)]
+    edges += [(s, i + 1, {"capacity": 1, "weight": inf}) for i in range(d1, d1 + d2)]
+    edges += [(i + 1, t, {"capacity": c0, "weight": 0}) for i in range(d1, d1 + d2)]
+    for i in range(d1):
+        for j in range(d2):
+            edges.append((i + 1, d1 + j + 1, {"capacity": 1, "weight": int(round(distances[i, j] * 10 ** precision))}))
+
+    G.add_edges_from(edges)
+    mincostFlow = nx.max_flow_min_cost(G, s, t)
+    mincost = (nx.cost_of_flow(G, mincostFlow) % inf) / (10 ** precision)
+    return mincost / sum(distances.shape)
+
+
+def norm_link_distance(A, B, internal_dist=distance.euclidean):
+    distances = distance.cdist(A, B, metric=internal_dist)
+    d1, d2 = distances.shape[0], distances.shape[1]
+
+    inf = np.sum(distances) * 2
+    down_left = np.full((d2, d2), inf)
+    np.fill_diagonal(down_left, np.min(distances, axis=0))
+    upper_right = np.full((d1, d1), inf)
+    np.fill_diagonal(upper_right, np.min(distances, axis=1))
+
+    cost_matrix = np.zeros((d1 + d2, d1 + d2))
+    cost_matrix[:d1, :d2] = distances
+    cost_matrix[d1:, :d2] = down_left
+    cost_matrix[:d1, d2:] = upper_right
+    matching = linear_sum_assignment(cost_matrix)
+    return cost_matrix[matching[0], matching[1]].sum() / sum(distances.shape)
+
+def encoding_distance(A, B, internal_dist=distance.euclidean, encoding=None):
+    return internal_dist(encoding[A.iloc[0, 0]], encoding[B.iloc[0, 0]])
 
 if __name__ == '__main__':
     from KEEL_DataReader import *

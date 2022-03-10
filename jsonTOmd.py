@@ -1,84 +1,23 @@
 import json
 from collections import defaultdict
+from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
+from itertools import chain
 
-filename = 'temp.json'
+feature_points = ["data", "b_dist", "int_dist", "int_owa", "picker", "pre_processors", "norm", "aggr"]
+
+filename = 'results3.json'
 header = [
-    '| dataset | bag distance | int_dist | ext_owa | int_owa | Accuracy | F1 | TP | TN | FP | FN | Sensitivity | False Negative Rate | False Positive Rate | Specificity | Precission | False omission rate | FDR | Negative predictive value |\n',
-    '|---------|--------------|----------|---------|---------|----------|----|----|----|----|----|-------------|---------------------|---------------------|-------------|------------|---------------------|-----|---------------------------|\n']
+    '| dataset | bag distance | int_dist | int_owa | picker | pre-processors | norm | Aggr | Accuracy | F1 | TP | TN | FP | FN |\n',
+    '|---------|--------------|----------|---------|--------|----------------|------|------|----------|----|----|----|----|----|\n']
 
 datasets = ['eastWest', 'elephant', 'fox', 'musk1', 'musk2', 'mutagenesis-atoms', 'mutagenesis-bonds',
             'mutagenesis-chains', 'tiger', 'westEast']
 
+output_dir = 'default/'
+import os
 
-def sens(tp, fn):
-    try:
-        return str(round(tp / (tp + fn), 3))
-    except:
-        return 'Nan'
-
-
-def fnr(fn, tp):
-    try:
-        return str(round(fn / (fn + tp), 3))
-    except:
-        return 'Nan'
-
-
-def fpr(fp, tn):
-    try:
-        return str(round(fp / (fp + tn), 3))
-    except:
-        return 'Nan'
-
-
-def spec(tn, fp):
-    try:
-        return str(round(tn / (tn + fp), 3))
-    except:
-        return 'Nan'
-
-
-def prec(tp, fp):
-    try:
-        return str(round(tp / (tp + fp), 3))
-    except:
-        return 'Nan'
-
-
-def npv(tn, fn):
-    try:
-        return str(round(tn / (fn + tn), 3))
-    except:
-        return 'Nan'
-
-
-def fdr(fp, tp):
-    try:
-        return str(round(fp / (fp + tp), 3))
-    except:
-        return 'Nan'
-
-
-def fomr(fn, tn):
-    try:
-        return str(round(fn / (fn + tn), 3))
-    except:
-        return 'Nan'
-
-
-def accuracy(tp, fp, tn, fn):
-    try:
-        return str(round((tp + tn) / (tp + fp + fn + tn), 3))
-    except:
-        return 'Nan'
-
-
-def f1(tp, fp, fn):
-    try:
-        return str(round((2 * tp) / (2 * tp + fp + fn), 3))
-    except:
-        return 'Nan'
-
+if not os.path.exists(f'results/{output_dir}'):
+    os.makedirs(f'results/{output_dir}')
 
 with open(filename, 'r') as file:
     data = json.load(file)
@@ -86,14 +25,19 @@ with open(filename, 'r') as file:
         rows = [result for result in data['results'] if result['data'] == dataset]
         table = []
         for result in rows:
-            tp = result['TP']
-            tn = result['TN']
-            fp = result['FP']
-            fn = result['FN']
+            predictions = [[int(i) for i in woord] for woord in result['predictions']]
+            true = [[int(i) for i in woord] for woord in result['true']]
+            # accuracy
+            acc = [accuracy_score(y_true, y_pred) for y_true, y_pred in zip(true, predictions)]
+            # F1
+            fscore = [accuracy_score(y_true, y_pred) for y_true, y_pred in zip(true, predictions)]
+
+            conf_matrix = confusion_matrix(list(chain(*true)), list(chain(*predictions)))
+            tn, fp, fn, tp = conf_matrix.ravel()
             table.append(
-                f'| {dataset} | {result["b_dist"]} | {result["int_dist"]} | {result["ext_owa"]} | {result["int_owa"]} | {accuracy(tp, fp, tn, fn)} | {f1(tp, fp, fn)} | {tp} | {tn} | {fp} | {fn} | {sens(tp, fn)} | {fnr(fn, tp)} | {fpr(fp, tn)} | {spec(tn, fp)} | {prec(tp, fp)} | {fomr(fn, tn)} | {fdr(fp, tp)} | {npv(tn, fn)} |\n')
-        table.sort(key=lambda row: float(row.strip('|').split('|')[6].strip(' ')), reverse=True)
-        f = open(f'results/{dataset}_results.md', 'w')
+                f'| {dataset} | {result["b_dist"]} | {result["int_dist"]}  | {result["int_owa"]} | {result["picker"]} | {result["pre_processors"]}  |  {result["norm"]} | {result["aggr"]} |{round(sum(acc) / len(acc), 3)} | {round(sum(fscore) / len(fscore), 3)}|{tp}|{tn}|{fp}|{fn}|\n')
+        table.sort(key=lambda row: float(row.strip('|').split('|')[9].strip(' ')), reverse=True)
+        f = open(f'results/{output_dir}{dataset}_results.md', 'w')
         f.write(''.join(header))
         f.write(''.join(table))
         f.close()

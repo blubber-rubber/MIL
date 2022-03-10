@@ -6,7 +6,7 @@ def BFMIC(X, y, classes, bag_relation, weight):
     best_score = 0
     for cl in classes:
         test = filter(lambda x: x.iloc[0, -1] == cl, X)
-        vector = np.array([bag_relation(x.iloc[:, 1:-1], y.iloc[:, 1:-1]) for x in test])
+        vector = np.array([bag_relation(x.iloc[:, :-1], y.iloc[:, :-1]) for x in test])
         score = Owa.OWA(vector, weight)
         if score >= best_score:
             best_score = score

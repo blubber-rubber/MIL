@@ -1,4 +1,7 @@
 import pandas as pd
+from sklearn.model_selection import StratifiedKFold
+import numpy as np
+import math
 
 
 class KEEL_Data:
@@ -39,8 +42,32 @@ class KEEL_Data:
         temp_data = temp_data.astype(convert_dict)
         self.data = temp_data
 
+    """
+    get_bags function returns list of all bags in the dataset
+    """
+
     def get_bags(self):
         bagdata = self.data.groupby(self.attributes[0])
         self.bag_labels = bagdata.groups.keys()
         bags = [bagdata.get_group(label) for label in self.bag_labels]
         return bags
+
+    """
+    k_fold returns a generator object that can be used to stratisfied k-fold validation.
+    Stratisfied means that the distribution of the class_labels is kept in the folds.
+
+
+    Usage for k-fold cross-validation:
+        data = KEEL_Data(f'multiInstance/eastWest/eastWest.dat')
+        for training_bags, test_bags in data.k_fold(k):
+            ...
+    """
+
+    def k_fold(self, k=10):
+        bags = self.get_bags()
+        X = [bag.iloc[:, :] for bag in bags]
+        y = [bag.iloc[1, -1] for bag in bags]
+        kf = StratifiedKFold(n_splits=k)
+        for train_index, test_index in kf.split(X, y):
+            X_train, X_test = [X[i] for i in train_index], [X[i] for i in test_index]
+            yield (X_train, X_test)

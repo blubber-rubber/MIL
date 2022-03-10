@@ -1,5 +1,9 @@
 import numpy as np
 
+"""
+Function to determine the OWA_aggregation of a vector using a  weight_vector
+"""
+
 
 def OWA(vector, weight):
     if callable(weight):

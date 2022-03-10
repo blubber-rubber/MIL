@@ -1,6 +1,11 @@
 import numpy as np
 
+"""
+Collection of OWA_weights
+"""
 
+
+# Determines the orness of a fuction
 def orness(weight):
     l = len(weight)
     test = l - np.arange(1, l + 1)

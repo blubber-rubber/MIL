@@ -1,0 +1,9 @@
+#!/bin/sh
+cat results2.json > temp.json
+py jsonTOmd.py
+git add results/
+git commit -m 'update results'
+git push
+
+sleep 1h
+exec ./update
