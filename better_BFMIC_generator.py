@@ -42,17 +42,18 @@ aggregator_OWA = [(Owa_weights.strict, 'strict'), (Owa_weights.additive, 'additi
 encodings = [(BagEncodings.averageEncoding, 'avg_enc'),
              (BagEncodings.centerEncoding, 'center_enc')]  # Encodings to be used
 
-size_pickers = [(Bag_regulizer.nothing, Bag_regulizer.nothing, None), (Bag_regulizer.median_picker, 'median'),
+size_pickers = [(Bag_regulizer.median_picker, 'median'),
                 (Bag_regulizer.no_outlier_picker, 'no-outlier')]
-pre_processors = [
-    (Bag_regulizer.random_undersampling, Bag_regulizer.random_oversampling, 'random'),
-    (Bag_regulizer.k_means_undersampling, Bag_regulizer.smote_oversampling, 'special')]
+pre_processors = [(Bag_regulizer.nothing, Bag_regulizer.nothing, None),
+                  (Bag_regulizer.random_undersampling, Bag_regulizer.random_oversampling, 'random'),
+                  (Bag_regulizer.k_means_undersampling, Bag_regulizer.smote_oversampling, 'special')]
 
 #
 
 filename = 'results3.json'  # Where to save the results
 
 roots = os.listdir('multiInstance')  # Where to get the data from
+roots=roots[2:]
 
 kfold = 'default'  # Make this a number if you want custom k-fold, or string 'default' to use the KEEL 10-fold
 

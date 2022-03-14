@@ -53,7 +53,7 @@ def smote_oversampling(bags, size):
         bagdata = bagdata.groupby(data.columns[0])
         bag_labels = bagdata.groups.keys()
         bags = [bagdata.get_group(label) for label in bag_labels]
-        return bags
+    return bags
 
 
 def median_picker(bags):
