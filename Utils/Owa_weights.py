@@ -21,7 +21,7 @@ def additive(n):
 
 
 def exponential(n):
-    return np.flip(2 ** np.arange(n) / (2 ** n - 1)) if n < 50 else np.cumprod(np.full(n, 0.5))
+    return np.flip(2 ** np.arange(n) / (2 ** n - 1)) if n <= 30 else np.cumprod(np.full(n, 0.5))
 
 
 def invadd(n):
@@ -44,3 +44,4 @@ def trimmed(k, weight):
 if __name__ == '__main__':
     print(orness(trimmed(5, mean)(20)))
     print(orness(lower_weight(trimmed(5, mean))(20)))
+    print(exponential(32))

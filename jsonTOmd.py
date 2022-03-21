@@ -5,7 +5,7 @@ from itertools import chain
 
 feature_points = ["data", "b_dist", "int_dist", "int_owa", "picker", "pre_processors", "norm", "aggr"]
 
-filename = 'results3.json'
+filename = 'results4.json'
 header = [
     '| dataset | bag distance | int_dist | int_owa | picker | pre-processors | norm | Aggr | Accuracy | F1 | TP | TN | FP | FN |\n',
     '|---------|--------------|----------|---------|--------|----------------|------|------|----------|----|----|----|----|----|\n']

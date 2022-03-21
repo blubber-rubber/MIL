@@ -50,10 +50,10 @@ pre_processors = [(Bag_regulizer.nothing, Bag_regulizer.nothing, None),
 
 #
 
-filename = 'results3.json'  # Where to save the results
+filename = 'results4.json'  # Where to save the results
 
 roots = os.listdir('multiInstance')  # Where to get the data from
-roots=roots[2:]
+
 
 kfold = 'default'  # Make this a number if you want custom k-fold, or string 'default' to use the KEEL 10-fold
 
